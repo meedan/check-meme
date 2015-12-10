@@ -13,12 +13,14 @@ $m: '.m-canvas';
     }
   }
 
-  #{$m}__download a {
+  #{$m}__download a, 
+  .share-button {
     background: $theme-color;
     border: none;
     border-radius: 5px;
     color: #fff;
     display: block;
+    width: 160px;
     font-weight: 700;
     line-height: 50px;
     text-align: center;

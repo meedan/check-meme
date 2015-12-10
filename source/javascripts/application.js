@@ -8,10 +8,12 @@
 //= require "helpers/font-monitor"
 //= require "vendor/share-button.min"
 
-
 shareConfig = {
+  description: "Debunk description",
+  image: "https://debunk-meme.herokuapp.com/images/false.png",
   ui: {
-    flyout: "top right"
+    flyout: "top right",
+    buttonText: "Share on Facebook or Twitter"
   },
   networks: {
     facebook: {
