@@ -17,6 +17,11 @@ ENV GITREPO https://github.com/meedan/checkdesk-meme
 
 RUN apt-get install -y nodejs 
 
+# nginx for checkdesk-meme
+COPY docker/nginx.conf /etc/nginx/sites-available/checkdesk-meme
+RUN ln -s /etc/nginx/sites-available/checkdesk-meme /etc/nginx/sites-enabled/checkdesk-meme
+RUN rm /etc/nginx/sites-enabled/default
+
 #
 # USER CONFIG
 #
@@ -52,4 +57,5 @@ RUN mv ./latest ./checkdesk-meme-$(date -I) && ln -s ./checkdesk-meme-$(date -I)
 
 USER root
 WORKDIR ${DEPLOYDIR}/current
-CMD bundle exec middleman
+RUN bundle exec middleman build
+CMD ["nginx"]
