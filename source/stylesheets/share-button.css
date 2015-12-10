@@ -1,19 +1,17 @@
-@import url("//fonts.googleapis.com/css?family=Lato");
 share-button {
   position: relative;
-  font-size: 16px;
-  color: #333;
-  background: #a29baa;
-  padding: 5px 10px 5px 1.75em;
+  font-size: 18px;
+  color: white;
+  background: #227fbb;
+  padding: 0.8em 2em 0.8em 2.5em;
   border-radius: 5px;
-  font-family: Lato, sans-serif;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   white-space: nowrap;
   -webkit-transition: all .3s ease;
           transition: all .3s ease;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 share-button:hover {
   color: rgba(51,51,51,0.8);
@@ -21,8 +19,9 @@ share-button:hover {
 }
 share-button:before {
   position: absolute;
-  line-height: 1em;
-  left: 0.6em;
+  line-height: 1;
+  top: 0.8em;
+  left: 1em;
   width: 1em;
   height: 1em;
   content: ' ';
