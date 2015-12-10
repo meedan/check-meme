@@ -20,7 +20,7 @@ RUN apt-get install -y nodejs
 # nginx for checkdesk-meme
 COPY docker/nginx.conf /etc/nginx/sites-available/checkdesk-meme
 RUN ln -s /etc/nginx/sites-available/checkdesk-meme /etc/nginx/sites-enabled/checkdesk-meme
-RUN rm /etc/nginx/sites-enabled/default
+RUN rm /etc/nginx/sites-enabled/default && rm /etc/nginx/conf.d/passenger.conf
 
 #
 # USER CONFIG
