@@ -12,7 +12,7 @@ dir=$(pwd)
 cd $(dirname "${BASH_SOURCE[0]}")
 
 # Run
-docker run -d -p 80:4567 --name ${NAME} ${IMAGE}:${VERSION}
+docker run -d -p 80:80 --name ${NAME} ${IMAGE}:${VERSION}
 
 echo '-----------------------------------------------------------'
 echo "${IMAGE} is now running at http://$(hostname)/"
