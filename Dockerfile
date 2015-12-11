@@ -39,7 +39,8 @@ RUN chmod 775 /var/www
 RUN chmod g+s /var/www
 
 WORKDIR ${DEPLOYDIR}
-COPY . ./latest
+COPY ./Gemfile ./latest/Gemfile
+COPY ./Gemfile.lock ./latest/Gemfile.lock
 
 RUN chown -R ${DEPLOYUSER}:www-data ${DEPLOYDIR}
 USER ${DEPLOYUSER}
@@ -48,7 +49,10 @@ WORKDIR ${DEPLOYDIR}/latest
 RUN echo "gem: --no-rdoc --no-ri" > ~/.gemrc && bundle install --deployment --without test development
 
 # config
+USER root
 WORKDIR ${DEPLOYDIR}
+COPY ./ ./latest
+RUN chown -R ${DEPLOYUSER}:www-data ${DEPLOYDIR}
 RUN mv ./latest ./checkdesk-meme-$(date -I) && ln -s ./checkdesk-meme-$(date -I) ./current
 
 #
