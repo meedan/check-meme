@@ -37,6 +37,6 @@ shareConfig = {
       enabled: false
     }
   }
-}
+};
 
 var share = new ShareButton(".share-button", shareConfig);
