@@ -9,6 +9,10 @@ $.each(document.location.search.substr(1).split('&'),function(c,q){
 });
 console.log(queries);
 
+if (queries.imageStamp) {
+  var imageStampPath = "images/" + queries.imageStamp + ".png";
+}
+
 // Build the default meme settings
 var MEME_SETTINGS = {
   creditText: decodeURI(queries.headline) || 'Checked by our team', // Default "credits" text.
@@ -61,7 +65,8 @@ var MEME_SETTINGS = {
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("fake.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
   // watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("warning.png") %>',
-  watermarkSrc: queries.imageStamp || (localStorage && localStorage.getItem('meme_watermark')),
+  // 
+  watermarkSrc: imageStampPath || (localStorage && localStorage.getItem('meme_watermark')),
   
   // Watermark image options: set to empty array to disable watermark picker.
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
