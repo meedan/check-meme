@@ -7,13 +7,16 @@ $.each(document.location.search.substr(1).split('&'),function(c,q){
     queries[i[0].toString()] = i[1].toString();  
   }
 });
-console.log(queries);
 
+// Handle stamp syntax like this: 
+//   http://memebuster.dev/?imageStamp=fake
+//   
 if (queries.imageStamp) {
   var imageStampPath = "images/" + queries.imageStamp + ".png";
 }
 
-// Build the default meme settings
+// Default settings
+// 
 var MEME_SETTINGS = {
   creditText: decodeURI(queries.headline) || 'Checked by our team', // Default "credits" text.
   creditSize: 12, // Font size for credit text.
@@ -22,7 +25,7 @@ var MEME_SETTINGS = {
 
   // Universal font family for texts:
   // Note that you'll need to included quoted font names as you would in CSS, ie: '"Knockout 28 B"'.
-  fontFamily: 'Mercury',
+  fontFamily: 'Futura',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
   fontFamilyOpts: ['Futura', 'Arial', 'Helvetica Neue'],
@@ -45,7 +48,7 @@ var MEME_SETTINGS = {
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#000',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#000', '#D00A1B', '#FEC509', '#78FF62', '#14A7FF'],
+  overlayColorOpts: ['#000', '#D00A1B', '#FEC509', '#78FF62'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
   
   // Text alignment: valid settings are "left", "center", and "right".
