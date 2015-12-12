@@ -1,62 +1,24 @@
-// Sharing plugin config
-shareConfig = {
-  description: "Debunk description",
-  image: "https://debunk-meme.herokuapp.com/images/false.png",
-  ui: {
-    flyout: "top right",
-    buttonText: "Share on Facebook or Twitter"
-  },
-  networks: {
-    facebook: {
-      load_sdk: true,
-      caption: "Debunk title",
-      image: "https://debunk-meme.herokuapp.com/images/false.png"
-    },
-    googlePlus: {
-      enabled: false
-    },
-    linkedin: {
-      enabled: false
-    },
-    pinterest: {
-      enabled: false
-    },
-    reddit: {
-      enabled: false
-    },
-    email: {
-      enabled: false
-    }
-  }
-};
-
-var share = new ShareButton(".share-button", shareConfig);
-
 // Read the query string to get the params from hubot
 // 
 var queries = {};
 $.each(document.location.search.substr(1).split('&'),function(c,q){
   var i = q.split('=');
-  queries[i[0].toString()] = i[1].toString();
+  if (i[1]) {
+    queries[i[0].toString()] = i[1].toString();  
+  }
 });
 console.log(queries);
 
-var link = queries.queryLink;
-var image = queries.queryImageBackground;
-var stamp = queries.queryImageStamp;
-var headline = queries.queryHeadline;
-var credit = queries.queryCredit;
-
 // Build the default meme settings
 var MEME_SETTINGS = {
-  creditText: headline || 'Checked by our team', // Default "credits" text.
+  creditText: decodeURI(queries.headline) || 'Checked by our team', // Default "credits" text.
   creditSize: 12, // Font size for credit text.
   downloadName: 'Debunk', // The name of the downloaded image file (will have a ".png" extension added).
   fontColor: 'white', // Universal font color.
 
   // Universal font family for texts:
   // Note that you'll need to included quoted font names as you would in CSS, ie: '"Knockout 28 B"'.
-  fontFamily: 'Futura',
+  fontFamily: 'Mercury',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
   fontFamilyOpts: ['Futura', 'Arial', 'Helvetica Neue'],
@@ -73,7 +35,7 @@ var MEME_SETTINGS = {
   headlineText: 'No, this didn\'t actually happen', // Default headline text.
   height: 378, // Canvas rendering height.
   imageScale: 1, // Background image scale.
-  imageSrc: image, // Default background image path. MUST reside on host domain, or use base64 data.
+  imageSrc: queries.imageBackground, // Default background image path. MUST reside on host domain, or use base64 data.
   overlayAlpha: 0.5, // Opacity of image overlay.
 
   // Image overlay color, or blank ('') for no overlay:
@@ -99,7 +61,7 @@ var MEME_SETTINGS = {
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("fake.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
   // watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("warning.png") %>',
-  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || stamp,
+  watermarkSrc: queries.imageStamp || (localStorage && localStorage.getItem('meme_watermark')),
   
   // Watermark image options: set to empty array to disable watermark picker.
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...

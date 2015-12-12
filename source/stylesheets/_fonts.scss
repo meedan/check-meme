@@ -1,1 +1,59 @@
+// Font Setup
+//
+// Using %pseudoclasses that are @extended.
+//
+// USAGE: Serif
+// .example-class--active { @extend %font--hfj-mercury-display-normal; }
+// 
+// USAGE: Sans serif
+// .another-example-class--default { @extend %font--hfj-whitney-bolditalic; }
+// 
+// This assumes the handfj fonts are in place.
 
+%font--hfj-whitney-normal {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font--hfj-whitney-italic {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-weight: 400;
+  font-style: italic;
+}
+
+%font--hfj-whitney-bold {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-weight: 700;
+  font-style: normal;
+}
+
+%font--hfj-whitney-bolditalic {
+  font-family: "Whitney SSm A", "Whitney SSm B";
+  font-weight: 700;
+  font-style: italic;
+}
+
+%font--hfj-mercury-display-normal {
+  font-family: 'Mercury Display A', 'Mercury Display B';
+  font-weight: 400;
+  font-style: normal;
+}
+
+%font--hfj-mercury-display-italic {
+  font-family: 'Mercury Display A', 'Mercury Display B';
+  font-weight: 400;
+  font-style: italic;
+}
+
+%font--hfj-mercury-display-bold {
+  font-family: 'Mercury Display A', 'Mercury Display B';
+  font-weight: 700;
+  font-style: normal;
+}
+
+%font--hfj-mercury-display-bolditalic {
+  font-family: 'Mercury Display A', 'Mercury Display B';
+  font-weight: 700;
+  font-style: italic;
+}

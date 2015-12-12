@@ -10,4 +10,31 @@
 @import 'modules/m-editor';
 @import 'modules/forms';
 
-@import 'share-button';
+@import 'vendor/share-button';
+
+// Font application
+//
+// Each of the major font styles can be implemented with @extend
+h1 {
+  @extend %font--hfj-whitney-normal;
+  font-size: 2.6em;
+}
+
+h2 {
+  @extend %font--hfj-whitney-normal;
+}
+
+h3 {
+  @extend %font--hfj-whitney-normal;
+}
+
+
+body {
+  @extend %font--hfj-whitney-normal;
+  color: $firefly20;
+  background-color: $firefly80;
+}
+
+a {
+  color: $firefly;
+}

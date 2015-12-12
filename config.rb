@@ -1,21 +1,6 @@
 # Reload the browser automatically whenever files change
 activate :livereload
 
-require "sinatra"
-
-class ImageHandler < Sinatra::Base
-  post '/' do
-    tempfile = params['file'][:tempfile]
-    filename = params['file'][:filename]
-    File.copy(tempfile.path, "./source/images/#{filename}")
-    redirect '/'
-  end
-end
-
-map "/upload" do
-  run ImageHandler
-end
-
 ###
 # Compass
 ###
