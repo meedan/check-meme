@@ -39,7 +39,6 @@ MEME.MemeModel = Backbone.Model.extend({
   // These images will (sort of) behave like managed model fields.
   initialize: function () {
     this.background = new Image();
-      this.background.src = image; // from settings.js.erb
     this.watermark = new Image();
 
     // Set image sources to trigger "change" whenever they reload:
@@ -48,7 +47,12 @@ MEME.MemeModel = Backbone.Model.extend({
     }, this);
 
     // Set initial image and watermark sources:
-    if (this.get('imageSrc')) this.background.src = this.get('imageSrc');
+    
+      if (image) {
+	  this.background.src = image; // from settings.js.erb
+      } else if (this.get('imageSrc')) {
+	  this.background.src = this.get('imageSrc');
+      }
     if (this.get('watermarkSrc')) this.setWatermarkSrc(this.get('watermarkSrc'));
 
     // Update image and watermark sources if new source URLs are set:
