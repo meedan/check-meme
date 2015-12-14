@@ -6,15 +6,13 @@ $m: '.m-canvas';
   }
 
   #{$m}__canvas {
-    background: #fcfcfc;
 
     canvas {
       max-width: 100% !important;
     }
   }
 
-  #{$m}__download a, 
-  .share-button {
+  #{$m}__download a {
     background: $theme-color;
     border: none;
     border-radius: 5px;

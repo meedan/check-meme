@@ -16,21 +16,15 @@
 //
 // Each of the major font styles can be implemented with @extend
 h1 {
-  @extend %font--hfj-whitney-normal;
-  font-size: 2.6em;
+  // @extend %font--hfj-whitney-normal;
+  font-size: 1.2em;
+  color: $firefly20;
+  text-transform: uppercase;
+  font-weight: normal;
 }
-
-h2 {
-  @extend %font--hfj-whitney-normal;
-}
-
-h3 {
-  @extend %font--hfj-whitney-normal;
-}
-
 
 body {
-  @extend %font--hfj-whitney-normal;
+  // @extend %font--hfj-whitney-normal;
   color: $firefly20;
   background-color: $firefly80;
 }
@@ -39,7 +33,7 @@ a {
   color: $firefly;
 }
 
-h1, h2, , .m-editor, .m-canvas {
+.m-editor, .m-canvas {
   opacity: 0;
   transition: opacity .5s ease-in-out;
 }
