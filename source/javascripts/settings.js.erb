@@ -22,17 +22,17 @@ if (queries.imageStamp) {
 // Default settings
 // 
 var MEME_SETTINGS = {
-  creditText: 'Checked by our team', // Default "credits" text.
+  creditText: 'Checked by our team: http://example.checkdesk.org', // Default "credits" text.
   creditSize: 12, // Font size for credit text.
-  downloadName: 'Debunk', // The name of the downloaded image file (will have a ".png" extension added).
+  downloadName: 'Meme Buster Snapshot', // The name of the downloaded image file (will have a ".png" extension added).
   fontColor: 'white', // Universal font color.
 
   // Universal font family for texts:
   // Note that you'll need to included quoted font names as you would in CSS, ie: '"Knockout 28 B"'.
-  fontFamily: 'Futura',
+  fontFamily: 'Arial',
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
-  fontFamilyOpts: ['Futura', 'Arial', 'Helvetica Neue'],
+  fontFamilyOpts: ['Arial', 'Futura', 'Helvetica Neue'],
   
   // Font size of main headline:
   fontSize: 24,
@@ -50,9 +50,9 @@ var MEME_SETTINGS = {
   overlayAlpha: 0.5, // Opacity of image overlay.
 
   // Image overlay color, or blank ('') for no overlay:
-  overlayColor: '#000',
+  overlayColor: '#10212f',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#000', '#D00A1B', '#FEC509', '#78FF62'],
+  overlayColorOpts: ['#10212f', '#000', '#FEC509', '#78FF62'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
   
   // Text alignment: valid settings are "left", "center", and "right".
@@ -81,7 +81,7 @@ var MEME_SETTINGS = {
   watermarkOpts: [
     {text: 'Real', value: '<%= image_path("real.png") %>', data: '<%= asset_data_uri("real.png") %>'},
     {text: 'Fake', value: '<%= image_path("fake.png") %>', data: '<%= asset_data_uri("fake.png") %>'},
-    {text: 'Misleading', value: '<%= image_path("misleading.png") %>', data: '<%= asset_data_uri("misleading.png") %>'},
+    {text: 'Unknown', value: '<%= image_path("unknown.png") %>', data: '<%= asset_data_uri("unknown.png") %>'},
     {text: 'Warning', value: '<%= image_path("warning.png") %>', data: '<%= asset_data_uri("warning.png") %>'}
   ],
 

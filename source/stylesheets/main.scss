@@ -1,35 +1,30 @@
 @charset "utf-8";
 @import 'compass';
-
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
 @import 'vars';
-@import 'fonts';
 @import 'globals';
-
 @import 'modules/m-meme';
 @import 'modules/m-canvas';
 @import 'modules/m-editor';
 @import 'modules/forms';
-
 @import 'vendor/share-button';
 
 // Font application
 //
 // Each of the major font styles can be implemented with @extend
 h1 {
-  // @extend %font--hfj-whitney-normal;
-  font-size: 1.2em;
+  font-size: 1.4em;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  margin-top: 0;
   color: $firefly40;
-  text-transform: uppercase;
   font-weight: normal;
   text-align: center;
   background-color: $firefly80;
-  margin-bottom: 1em;
-  margin-top: 0;
-  padding: 1em;
 }
 
 body {
-  // @extend %font--hfj-whitney-normal;
+  font-family: Lato, Helvetica, Arial;
   color: $firefly60;
   background-color: $thatch5Alt;
   padding: 0;
@@ -39,6 +34,10 @@ a {
   color: $firefly;
 }
 
+// Javascript based transitions happen here
+// 
+// The visible class is added. See ease-in.js.
+// 
 .m-editor, 
 .m-canvas {
   opacity: 0;
@@ -50,14 +49,17 @@ a {
   transition: opacity .5s ease-in-out;
 }
 
+// The footer with attribution links
+// 
 .meta {
   width: 100%;
   display: flex;
   &>* {
     line-height: 1.3;
     font-size: 16px;
-    padding: 1em;
-    margin: 1em;
+    padding: 0.2em 1em;
+    margin: 0.2em 1em;
+    font-size: smaller;
   }
   @media all and (min-width: 600px) {
     position: fixed;

@@ -7,15 +7,6 @@ body {
 
 #{$m} {
   margin: 20px auto 50px;
-  max-width: 990px;
-
-  // Mini-clearfix:
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
+  max-width: 90%;
+  display: flex;
 }

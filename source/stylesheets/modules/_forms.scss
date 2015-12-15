@@ -1,38 +1,93 @@
+$form--font-size: 12px;
+$form--default-padding: 5px; 
+$form--radius: 6px;
+
+
+// Rounded edges utilit
+// 
+%rounded-edges {
+  &:first-of-type {
+    border-top-left-radius: $form--radius;
+    border-top-right-radius: $form--radius;
+  }
+  &:last-of-type {
+    margin-top: 0;
+    border-bottom-left-radius: $form--radius;
+    border-bottom-right-radius: $form--radius;
+  }
+}
+
+// Forms
+// 
 form {
+  padding: 0 1em;
   h2 {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 0 0 0.25em;
+    margin-bottom: 0em;
+    font-size: $form--font-size;
+    // color: $firefly60;
+    color: $firefly80;
+    padding: $form--default-padding 0 0;
+    &:first-of-type {
+      border-top-width: 0;
+    }
+    // & + select, 
+    // & + input {
+    //   border: 1px solid aqua!important;
+    //   margin-top: 0;
+    // }
   }
 
+  // Groups in the form
+  .form-group {
+    @extend %rounded-edges;
+    background-color: white;
+    padding: $form--default-padding $form--default-padding*2 $form--default-padding * 2;
+    border: 1px solid $firefly10;
+    border-top-width: 0;
+    // &:first-of-type {
+    //   margin-top: -50px;
+    // }
+    &:last-of-type {
+      border-top-width: 1px!important;
+    }
+  }
+
+  // Some form elements
   select,
   textarea,
   input[type="text"],
   input[type="range"],
   .checkbox-group {
-    margin-bottom: 1.5em;
     width: 100%;
+    overflow: hidden;
+    font-size: $form--font-size;
+    min-height: 1.8em;
+    font-family: Lato, helvetica, Arial, sans-serif;
+    padding: $form--default-padding;
   }
 
+  // Labels
   .checkbox-group label {
-    font-size: 0.8em;
     font-weight: normal;
     margin-bottom: 0;
   }
 
+  // Other form elements
   textarea,
   input[type="text"] {
-    border: 1px solid #efefef;
+    border: 1px solid $firefly10;
+    line-height: 2.8;
     outline: 0;
-    padding: 6px 5px;
 
     &:focus {
       border: 1px solid lighten($theme-color, 40);
+      border-bottom: 1px solid $dodgerBlue;
+      transition: border 0.3s;
     }
   }
 
   textarea {
-    height: 6em;
+    height: 3em;
   }
 
   select,
