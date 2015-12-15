@@ -22,22 +22,25 @@ h1 {
   text-transform: uppercase;
   font-weight: normal;
   text-align: center;
-  border-bottom: 4px double darken($checkdesk-grey, 20%);
+  background-color: $firefly80;
   margin-bottom: 1em;
+  margin-top: 0;
   padding: 1em;
 }
 
 body {
   // @extend %font--hfj-whitney-normal;
   color: $firefly60;
-  background-color: $checkdesk-grey;
+  background-color: $thatch5Alt;
+  padding: 0;
 }
 
 a {
   color: $firefly;
 }
 
-.m-editor, .m-canvas {
+.m-editor, 
+.m-canvas {
   opacity: 0;
   transition: opacity .5s ease-in-out;
 }

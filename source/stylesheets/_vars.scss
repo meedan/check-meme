@@ -1,6 +1,4 @@
-// colors
-$default-text-color     : #4C4E4D;
-$theme-color            : #2980b9;
+
 
 // breakpoints
 $break_xsmall         : 400px;
@@ -23,7 +21,7 @@ $sidebar-width-narrow   : 160px;
 $default-font-size    : 16px;
 $default-line-height  : (25px/$default-font-size);
 
-// Checkdesk colors
+// Checkdesk colors named
 $ooew-red: #960808;
 $firefly2: #fafbfb;
 $firefly10: #e7e8ea;
@@ -56,3 +54,7 @@ $verified: #399664;
 $undetermined: #EC9131;
 $false: #CC4F43;
 $in-progress: #F5A623;
+
+// Meme colors configured
+$default-text-color     : white;
+$theme-color            : $dodgerBlue;

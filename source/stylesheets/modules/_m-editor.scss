@@ -10,6 +10,13 @@ $m: '.m-editor';
     width: 30%;
   }
 
+  .form-group {
+    background-color: white;
+    padding: 1em;
+    border: 1px solid $firefly10;
+    margin: 1em 0;
+  }
+
   .dropzone {
     background-color: #fcfcfc;
     border: 2px dashed #cfcfcf;
