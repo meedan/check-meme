@@ -1,6 +1,9 @@
 shareConfig = {
   description: "Debunk description",
-  image: "https://debunk-meme.herokuapp.com/images/false.png",
+
+  // This is a test image; it does not work.
+  // We need to dynamically add the image that is generated.
+  // image: "https://debunk-meme.herokuapp.com/images/false.png",
   ui: {
     flyout: "top right",
     buttonText: "Share on Facebook or Twitter"
@@ -9,7 +12,9 @@ shareConfig = {
     facebook: {
       load_sdk: true,
       caption: "Debunk title",
-      image: "https://debunk-meme.herokuapp.com/images/false.png"
+      // This is a test image; it does not work.
+      // We need to dynamically add the image that is generated.
+      // image: "https://debunk-meme.herokuapp.com/images/false.png"
     },
     googlePlus: {
       enabled: false

@@ -1,23 +1,12 @@
-# Meme v.2
+# Meme Buster Prototype
 
-Contributors: Yuri Victor, Joshua Benton, Matt Montgomery, Ivar Vong, Steve Peters, Flip Stewart, Greg MacWilliam.
+Checkdesk Meme Buster is Meedan's fork of the Vox "Meme v.2" project.
 
-Meme is a generator that Vox Media uses to create social sharing images. See working version at [http://www.sbnation.com/a/meme](http://www.sbnation.com/a/meme).
-
-![screenshot](readme.png)
-
-## What's new in version 2.0?
-
-* Refactored into a formal MV* app.
-* Fixed bugs with rendering state and repeat drag-n-drop images.
-* Improved initial rendering with loaded web fonts.
-* Improved cross-origin options: both for base64 images and CORS.
-* Highly (and easily!) customizable editor and theme options.
-* Watermark selector.
+We've customized the meme generator with special "verification stickers."
 
 ## Install
 
-* `git clone https://github.com/voxmedia/meme.git`
+* `git clone https://github.com/meedan/memebuster.git`
 * `bundle install`
 * `bundle exec middleman`
 
@@ -56,8 +45,23 @@ If you're hosting this application on the same domain that serves your images, t
 
 ## Contributing
 
-1. Fork it ( https://github.com/voxmedia/meme/fork )
+1. Fork it ( https://github.com/meedan/memebuster/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## Meme v.2 credits
+
+Contributors: Yuri Victor, Joshua Benton, Matt Montgomery, Ivar Vong, Steve Peters, Flip Stewart, Greg MacWilliam.
+
+Meme is a generator that Vox Media uses to create social sharing images. See working version at [http://www.sbnation.com/a/meme](http://www.sbnation.com/a/meme).
+
+## What's new in version 2.0?
+
+* Refactored into a formal MV* app.
+* Fixed bugs with rendering state and repeat drag-n-drop images.
+* Improved initial rendering with loaded web fonts.
+* Improved cross-origin options: both for base64 images and CORS.
+* Highly (and easily!) customizable editor and theme options.
+* Watermark selector.

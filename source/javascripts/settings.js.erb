@@ -3,12 +3,16 @@
 var queries = {};
 $.each(document.location.search.substr(1).split('&'),function(c,q){
   var i = q.split('=');
+
+  // If there are queries, build an array
   if (i[1]) {
     queries[i[0].toString()] = i[1].toString();  
   }
 });
 
-// Handle stamp syntax like this: 
+// Handle stamp syntax like this, 
+// So you dont have to type the full image name or path.
+// 
 //   http://memebuster.dev/?imageStamp=fake
 //   
 if (queries.imageStamp) {
