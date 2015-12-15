@@ -1,17 +1,15 @@
-$m: '.m-canvas';
+// The canvas module inside the meme module
+// 
+.m-canvas {
+  width: 70%;
 
-#{$m} {
-  @media screen and (min-width: 700px) {
-    width: 70%;
-  }
-
-  #{$m}__canvas {
+  .m-canvas__canvas {
     canvas {
       max-width: 100% !important;
     }
   }
 
-  #{$m}__download a {
+  .m-canvas__download a {
     background: $theme-color;
     border: none;
     border-radius: 5px;
@@ -29,7 +27,7 @@ $m: '.m-canvas';
     }
   }
 
-  #{$m}__download-note {
+  .m-canvas__download-note {
     color: #777;
     font-size: 12px;
     font-style: italic;

@@ -1,15 +1,10 @@
-$m: '.m-editor';
-
-#{$m} {
+// The editor module inside the meme module
+// 
+.m-editor {
   margin-bottom: 30px;
-
-  @media screen and (min-width: 700px) {
-    @include box-sizing(border-box);
-    float: right;
-    padding-left: 20px;
-    width: 30%;
-    min-width: 280px;
-  }
+  padding-left: 20px;
+  width: 30%;
+  min-width: 280px;
 
   .dropzone {
     background-color: #fcfcfc;
@@ -41,7 +36,7 @@ $m: '.m-editor';
     }
   }
 
-  #{$m}__overlay {
+  .m-editor__overlay {
 
     // Mini-clearfix:
     &:before,
@@ -67,7 +62,7 @@ $m: '.m-editor';
     }
   }
 
-  #{$m}__swatch {
+  .m-editor__swatch {
     @include appearance(none);
     background-color: #000;
     border-radius: 3px;

@@ -2,7 +2,6 @@ $form--font-size: 12px;
 $form--default-padding: 5px; 
 $form--radius: 6px;
 
-
 // Rounded edges utilit
 // 
 %rounded-edges {
@@ -24,17 +23,11 @@ form {
   h2 {
     margin-bottom: 0em;
     font-size: $form--font-size;
-    // color: $firefly60;
     color: $firefly80;
     padding: $form--default-padding 0 0;
     &:first-of-type {
       border-top-width: 0;
     }
-    // & + select, 
-    // & + input {
-    //   border: 1px solid aqua!important;
-    //   margin-top: 0;
-    // }
   }
 
   // Groups in the form
@@ -44,9 +37,7 @@ form {
     padding: $form--default-padding $form--default-padding*2 $form--default-padding * 2;
     border: 1px solid $firefly10;
     border-top-width: 0;
-    // &:first-of-type {
-    //   margin-top: -50px;
-    // }
+
     &:last-of-type {
       border-top-width: 1px!important;
     }
