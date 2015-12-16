@@ -23,7 +23,7 @@ if (queries.imageStamp) {
 // 
 var MEME_SETTINGS = {
   creditText: 'Checked by our team: http://example.checkdesk.org', // Default "credits" text.
-  creditSize: 12, // Font size for credit text.
+  creditSize: 20, // Font size for credit text.
   downloadName: 'Meme Buster Snapshot', // The name of the downloaded image file (will have a ".png" extension added).
   fontColor: 'white', // Universal font color.
 
@@ -35,18 +35,19 @@ var MEME_SETTINGS = {
   fontFamilyOpts: ['Arial', 'Futura', 'Helvetica Neue'],
   
   // Font size of main headline:
-  fontSize: 24,
+  fontSize: 36,
   // Font size options: set to empty array to disable font-size selector.
   fontSizeOpts: [
     {text: 'Small text', value: 14},
     {text: 'Medium text', value: 24},
-    {text: 'Large text', value: 36}
+    {text: 'Large text', value: 36},
+    {text: 'X-Large text', value: 50}
   ],
 
   headlineText: 'No, this didn\'t actually happen', // Default headline text.
   height: 600, // Canvas rendering height.
   imageScale: 1, // Background image scale.
-  imageSrc: queries.imageBackground, // Default background image path. MUST reside on host domain, or use base64 data.
+  imageSrc: queries.imageBackground , // Default background image path. MUST reside on host domain, or use base64 data.
   overlayAlpha: 0.5, // Opacity of image overlay.
 
   // Image overlay color, or blank ('') for no overlay:
@@ -67,7 +68,7 @@ var MEME_SETTINGS = {
   textShadow: false, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
   watermarkAlpha: 1, // Opacity of watermark image.
-  watermarkMaxWidthRatio: 0.25, // Maximum allowed width of watermark (percentage of total canvas width).
+  watermarkMaxWidthRatio: 0.3, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("fake.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
@@ -79,10 +80,10 @@ var MEME_SETTINGS = {
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   watermarkOpts: [
-    {text: 'Real', value: '<%= image_path("real.png") %>', data: '<%= asset_data_uri("real.png") %>'},
-    {text: 'Fake', value: '<%= image_path("fake.png") %>', data: '<%= asset_data_uri("fake.png") %>'},
-    {text: 'Unknown', value: '<%= image_path("unknown.png") %>', data: '<%= asset_data_uri("unknown.png") %>'},
-    {text: 'Warning', value: '<%= image_path("warning.png") %>', data: '<%= asset_data_uri("warning.png") %>'}
+    {text: 'Real', value: '<%= image_path("real@2x.png") %>', data: '<%= asset_data_uri("real@2x.png") %>'},
+    {text: 'Fake', value: '<%= image_path("fake@2x.png") %>', data: '<%= asset_data_uri("fake@2x.png") %>'},
+    {text: 'Unknown', value: '<%= image_path("unknown@2x.png") %>', data: '<%= asset_data_uri("unknown@2x.png") %>'},
+    {text: 'Warning', value: '<%= image_path("warning@2x.png") %>', data: '<%= asset_data_uri("warning@2x.png") %>'}
   ],
 
   width: 1200 // Canvas rendering width.

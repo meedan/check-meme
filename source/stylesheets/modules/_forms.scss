@@ -37,6 +37,7 @@ form {
       margin-top: 0;
       border-bottom-left-radius: $radius;
       border-bottom-right-radius: $radius;
+      border-bottom-width: 1px!important;
     }
 
     &.more-options-button {
