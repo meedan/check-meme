@@ -2,7 +2,6 @@
 @import 'compass';
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
 @import 'vars';
-@import 'modules/m-meme';
 @import 'modules/m-canvas';
 @import 'modules/m-editor';
 @import 'modules/forms';
@@ -31,9 +30,10 @@ body.noselect {
   @include user-select(none);
 }
 
-.content {
+.m-meme {
   max-width: 1400px;
   margin: 0 auto;
+  display: flex;
 }
 
 // Font application
