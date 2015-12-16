@@ -7,10 +7,10 @@
   min-width: 280px;
 
   .dropzone {
-    background-color: #fcfcfc;
-    border: 2px dashed #cfcfcf;
+    background-color: $thatch5Alt;
+    border: 2px dashed $dodgerBlue;
     border-radius: 10px;
-    color: #6a6a69;
+    color: $dodgerBlue;
     display: block;
     font-size: 18px;
     font-weight: 700;
@@ -21,15 +21,6 @@
     margin: 1em;
 
     &.pulse {
-      -webkit-animation: pulsate 0.3s infinite;
-      -webkit-animation-direction: alternate;
-      -webkit-animation-timing-function: ease-in-out;
-      -moz-animation: pulsate 0.3s infinite;
-      -moz-animation-direction: alternate;
-      -moz-animation-timing-function: ease-in-out;
-      -o-animation: pulsate 0.3s infinite;
-      -o-animation-direction: alternate;
-      -o-animation-timing-function: ease-in-out;
       animation: pulsate 0.3s infinite;
       animation-direction: alternate;
       animation-timing-function: ease-in-out;
@@ -63,7 +54,7 @@
   }
 
   .m-editor__swatch {
-    @include appearance(none);
+    appearance: none;
     background-color: #000;
     border-radius: 3px;
     cursor: pointer;
@@ -95,15 +86,6 @@
   }
 }
 
-@-webkit-keyframes pulsate {
-  @include pulsate-keyframe();
-}
-@-moz-keyframes pulsate {
-  @include pulsate-keyframe();
-}
-@-o-keyframes pulsate {
-  @include pulsate-keyframe();
-}
 @keyframes pulsate {
   @include pulsate-keyframe();
 }

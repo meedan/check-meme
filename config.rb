@@ -2,13 +2,6 @@
 activate :livereload
 
 ###
-# Compass
-###
-compass_config do |config|
-  config.output_style = :compressed
-end
-
-###
 # Helpers
 ###
 helpers do
@@ -25,6 +18,11 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :url_prefix, '/'
 set :absolute_prefix, 'http://localhost:4567'
+
+# Autoprefixer
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions']
+end
 
 # Build-specific configuration
 configure :build do
