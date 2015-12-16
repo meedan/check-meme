@@ -1,51 +1,52 @@
-$form--font-size: 12px;
-$form--default-padding: 5px; 
-$form--radius: 6px;
-
-// Rounded edges utilit
-// 
-%rounded-edges {
-  &:first-of-type {
-    border-top-left-radius: $form--radius;
-    border-top-right-radius: $form--radius;
-  }
-  &:last-of-type {
-    margin-top: 0;
-    border-bottom-left-radius: $form--radius;
-    border-bottom-right-radius: $form--radius;
-  }
-}
-
-// Forms
+// Meme Buster Forms
 // 
 form {
   padding: 0 1em;
+  margin-top: -70px;
+
+  // Labels
+  // 
+  .checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
   h2 {
     margin-bottom: 0em;
     font-size: $form--font-size;
     color: $firefly80;
-    padding: $form--default-padding 0 0;
+    padding: $pad 0 0;
     &:first-of-type {
       border-top-width: 0;
     }
   }
 
   // Groups in the form
+  // 
   .form-group {
-    @extend %rounded-edges;
     background-color: white;
-    padding: $form--default-padding $form--default-padding*2 $form--default-padding * 2;
+    padding: $pad $pad*2 $pad * 2;
     border: 1px solid $firefly10;
-    border-top-width: 0;
+    border-bottom-width: 0;
 
+    &:first-of-type {
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+    }
     &:last-of-type {
-      border-top-width: 1px!important;
+      margin-top: 0;
+      border-bottom-left-radius: $radius;
+      border-bottom-right-radius: $radius;
+    }
+
+    &.more-options-button {
+      border: 1px solid $firefly10;
     }
   }
 
-  // Some form elements
+  // Form base styles
+  // 
   select,
-  textarea,
   input[type="text"],
   input[type="range"],
   .checkbox-group {
@@ -53,43 +54,43 @@ form {
     overflow: hidden;
     font-size: $form--font-size;
     min-height: 1.8em;
-    font-family: Lato, helvetica, Arial, sans-serif;
-    padding: $form--default-padding;
+    padding: $pad;
   }
 
-  // Labels
-  .checkbox-group label {
-    font-weight: normal;
-    margin-bottom: 0;
-  }
-
-  // Other form elements
-  textarea,
+  // Inputs
+  // 
   input[type="text"] {
     border: 1px solid $firefly10;
     line-height: 2.8;
     outline: 0;
 
     &:focus {
-      border: 1px solid lighten($theme-color, 40);
-      border-bottom: 1px solid $dodgerBlue;
+      border: 1px solid $dodgerBlue;
       transition: border 0.3s;
     }
   }
 
-  textarea {
-    height: 3em;
-  }
-
+  // Select
+  // 
   select,
   option {
     border: 1px solid #cfcfcf;
     border-radius: 0;
   }
 
+  // Fieldset
+  // 
   fieldset {
     border: none;
     margin: 0 auto;
     padding: 0;
   }
+}
+
+.more-options-button a {
+  text-align: center;
+  display: block;
+  color: $dodgerBlue;
+  text-decoration: none;
+  padding-bottom: 1em;
 }

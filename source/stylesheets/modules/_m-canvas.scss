@@ -3,12 +3,16 @@
 .m-canvas {
   width: 70%;
 
-  .m-canvas__canvas {
-    canvas {
-      max-width: 100% !important;
-    }
+  // Constrain the canvas to 100%
+  // 
+  // The goal is to allow the generated image to be high-resolution but still fit on the screen.
+  // 
+  canvas {
+    max-width: 100%;
   }
 
+  // The download button
+  // 
   .m-canvas__download a {
     background: $theme-color;
     border: none;
@@ -27,11 +31,5 @@
     &:hover {
       background: lighten($theme-color, 25);
     }
-  }
-
-  .m-canvas__download-note {
-    color: #777;
-    font-size: 12px;
-    font-style: italic;
   }
 }
