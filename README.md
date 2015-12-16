@@ -59,9 +59,23 @@ Meme is a generator that Vox Media uses to create social sharing images. See wor
 
 ## What's new in version 2.0?
 
+(I think this was the last sprint by Vox. — CGB 2015 Dec 15)
+
 * Refactored into a formal MV* app.
 * Fixed bugs with rendering state and repeat drag-n-drop images.
 * Improved initial rendering with loaded web fonts.
 * Improved cross-origin options: both for base64 images and CORS.
 * Highly (and easily!) customizable editor and theme options.
 * Watermark selector.
+
+## What's new in version 2.1?
+
+This was the start of the Checkdesk fork of the original Vox meme project. The Checkdesk project changed the stickers and the layout a bit  — CGB 2015 Dec 15)
+
+* Verification-oriented stickers
+* Simplified menu
+* Higher resolution output
+* Clearer information hierarchy and call to action
+* Clearer labeling and attribution
+* New feedback form
+* Typography and colors sync’d with Checkdesk
