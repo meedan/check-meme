@@ -7,9 +7,10 @@
 //= require "views/meme-editor"
 //= require "helpers/font-monitor"
 //= require "helpers/ease-in"
-//= require "vendor/share-button.min"
-//= require "settings.share-button"
 
+
+// The more-options section of the form
+// 
 $(document).ready(function() {
   $('.more-options.js-toggle').hide();
   $('.more-options-button a').click(function(e) {
