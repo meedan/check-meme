@@ -6,7 +6,6 @@
 @import 'modules/m-canvas';
 @import 'modules/m-editor';
 @import 'modules/forms';
-@import 'vendor/share-button';
 
 // Global declarations
 // 
@@ -38,8 +37,6 @@ body.noselect {
 }
 
 // Font application
-//
-// Each of the major font styles can be implemented with @extend
 h1 {
   font-size: 1.4em;
   padding: 0.8em;
@@ -79,7 +76,7 @@ a {
 
 // The footer with attribution links
 // 
-.meta {
+footer.meta {
   width: 100%;
   display: flex;
   padding: 1em;
