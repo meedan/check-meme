@@ -18,4 +18,9 @@ $(document).ready(function() {
     $('.more-options.js-toggle').addClass('.js-last');
     e.preventDefault();
   });
+
+  // Render the querystring 
+  // for the link detail page prototype support
+  // 
+  $('.js-queries').text(queries.source);
 });
