@@ -1,6 +1,3 @@
-# Reload the browser automatically whenever files change
-activate :livereload
-
 ###
 # Helpers
 ###
@@ -9,6 +6,8 @@ helpers do
     absolute_prefix + url_prefix
   end
 end
+
+sprockets.append_path "#{root}/node_modules"
 
 ###
 # Config

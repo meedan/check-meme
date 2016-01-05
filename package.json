@@ -1,0 +1,38 @@
+{
+  "name": "meedan-checkdesk-meme",
+  "version": "1.0.0",
+  "description": "Checkdesk Meme Buster is Meedan's fork of the Vox \"Meme v.2\" project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "bundle exec middleman && browser-sync start --proxy 'localhost:4567' --files source"
+  },
+  "dependencies": {
+    "twitter-node-client": "^0.0.6"
+  },
+  "devDependencies": {
+    "backbone": "^1.2.3",
+    "backbone.localstorage": "^1.1.16",
+    "jquery": "^2.1.4",
+    "todomvc-app-css": "^2.0.3",
+    "todomvc-common": "^1.0.2",
+    "underscore": "^1.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meedan/checkdesk-meme.git"
+  },
+  "keywords": [
+    "meme",
+    "meedan",
+    "checkdesk"
+  ],
+  "author": "Chris Blow (chris@meedan.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meedan/checkdesk-meme/issues"
+  },
+  "homepage": "https://github.com/meedan/checkdesk-meme#readme"
+}

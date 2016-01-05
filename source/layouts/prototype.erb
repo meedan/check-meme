@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-framework="backbonejs">
+  <head>
+    <%= partial "partials/head" %>
+  </head>
+
+    <h1>Checking: <span class="js-querystring-source"></span></h1>
+
+    <section class="todoapp">
+      <header class="header">
+        <h1>todos</h1>
+        <input class="new-todo" placeholder="What needs to be done?" autofocus>
+      </header>
+
+      <section class="main">
+        <input class="toggle-all" type="checkbox">
+        <label for="toggle-all">Mark all as complete</label>
+        <ul class="todo-list"></ul>
+      </section>
+
+      <footer class="footer"></footer>
+    </section>
+
+    <footer class="info">
+      <p>Double-click to edit a todo</p>
+    </footer>
+
+    <script type="text/template" id="item-template">
+      <div class="view">
+        <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
+        <label>[•- title •]</label>
+        <button class="destroy"></button>
+      </div>
+      <input class="edit" value="[•- title •]">
+    </script>
+    
+    <script type="text/template" id="stats-template">
+      <span class="todo-count"><strong>[•= remaining •]</strong> [•= remaining === 1 ? 'item' : 'items' •] left</span>
+      <ul class="filters">
+        <li>
+          <a class="selected" href="#/">All</a>
+        </li>
+        <li>
+          <a href="#/active">Active</a>
+        </li>
+        <li>
+          <a href="#/completed">Completed</a>
+        </li>
+      </ul>
+      [• if (completed) { •]
+      <button class="clear-completed">Clear completed</button>
+      [• } •]
+    </script>
+
+
+
+    <section class="link-page--checklog">
+      <button>Reverse Image Search</button>
+      <button>Translation</button>
+      <button>Location</button>
+    </section>
+    
+    <footer class="meta">
+      <h4 class="credit--primary">A <a href="http://checkdesk.org">Checkdesk</a> experiment.</h4>
+      <h4 class="feedback"><a href="https://docs.google.com/a/meedan.com/forms/d/1wJn6iodjKaIY-4DxbVsoO_saLfFRB_And2RxHm5-eYc/edit?uiv=1">I wish this page would ...</a></h4>
+    </footer>
+    
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'settings' %>
+  </body>
+</html>
