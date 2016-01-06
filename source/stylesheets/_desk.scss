@@ -1,0 +1,65 @@
+// Reports list
+// 
+.reports {
+  background-color: $firefly80;
+  display: flex;
+  width: 80%;
+}
+
+// A Report 
+// 
+.report {
+  background-color: white;
+  border-radius: 10px;
+  color: $firefly80;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 1em;
+
+  // A youtube video that has been removed
+  // 
+  &.video.removed {
+  width: 490px;
+  height: 274px;
+  background-size: cover;
+  background-color: black;
+ }
+
+  // The status on a report
+  // 
+ .verification_status {
+    background-color: yellow;
+    color: black;
+ } 
+
+ // The report ID
+ // 
+ .id {
+  font-weight: bold;
+ }
+
+ // The upstream origin URL
+ // 
+ .origin_url {
+  color: blue;
+ }
+
+ // The type of report
+ // 
+ .type {
+  border-bottom: 1px solid $firefly80;
+ }
+
+ // The report source (eg youtube:user)
+ // 
+ .source {
+
+ }
+
+ // Which user added the report
+ .added_by {
+
+ }
+
+ 
+}

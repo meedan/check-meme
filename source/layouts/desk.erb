@@ -5,7 +5,41 @@
   </head>
 
     <h1>Checking: <span class="js-queries"></span></h1>
-    
+
+    <h3>Project: Bellingcat</h3>
+
+    <div class="reports">
+      <% data.reports.each do |r| %>
+        <div class="report <%= r.type %> <%= r.archive_status %>">
+          <div class="media-object">
+            <img src="/images/prototype/<%=r.type%>-<%=r.archive_status%>.png">
+          </div>
+          <div class="verification_status">
+            <%= r.verification_status %>
+          </div>
+          <div class="id">
+            <%= r.id %>
+            </div>
+
+          <div class="origin_url">
+            <%= r.origin_url %>
+          </div>
+
+          <div class="type">
+            <%= r.type %>
+          </div>
+
+          <div class="source">
+            <%= r.source %>
+          </div>
+
+          <div class="added_by">
+            <%= r.added_by %></div>
+          </div>
+        <div>
+      <% end %>        
+    </div>
+
     <footer class="meta">
       <h4 class="credit--primary">A <a href="http://checkdesk.org">Checkdesk</a> experiment.</h4>
       <h4 class="credit--secondary">Based on <a href="https://github.com/voxmedia/meme">Meme</a> by Vox Media.</h4>
