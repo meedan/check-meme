@@ -3,7 +3,7 @@
 .reports {
   background-color: $firefly80;
   display: flex;
-  width: 80%;
+  width: 100%;
 }
 
 // A Report 
@@ -13,34 +13,39 @@
   border-radius: 10px;
   color: $firefly80;
   min-width: 300px;
-  max-width: 700px;
+  max-width: 500px;
   margin: 1em;
+  overflow: hidden;
 
-  // A youtube video that has been removed
+  & > * {
+    padding: 0.5em;
+  }
+
+  // The media object core
   // 
-  &.video.removed {
-  width: 490px;
-  height: 274px;
-  background-size: cover;
-  background-color: black;
- }
+  .media-object {
+    padding: 0;
+    img {
+      max-width: 500px;
+    }
+  }
+
+  // The title of the media object
+  // 
+  .title {
+    font-size: 1.4em;
+  }
 
   // The status on a report
   // 
- .verification_status {
+ .verification-status {
     background-color: yellow;
     color: black;
  } 
 
- // The report ID
- // 
- .id {
-  font-weight: bold;
- }
-
  // The upstream origin URL
  // 
- .origin_url {
+ .source-username {
   color: blue;
  }
 
@@ -57,9 +62,20 @@
  }
 
  // Which user added the report
- .added_by {
-
- }
-
- 
+ .added-by {
+  .source-domain { 
+    background-color: black;
+    color: white;
+    padding: 0.5em;
+    border-radius: 4px;
+    color: white; 
+  }
+  .datestamp { font-style: italic; }
+  .username { 
+    font-weight: 700; 
+    &:before {
+      content: "by ";
+    }
+  }
+ } 
 }

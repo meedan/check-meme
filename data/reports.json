@@ -3,9 +3,45 @@
   "media_object": "video-removed.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/820",
   "type": "video",
-  "source": "youtube",
+  "source_domain": "YT",
+  "source_username": "وكالة قاسيون للانباء",
   "verification_status": "In progress",
-  "archive_status": "removed", 
-  "title": "وكالة قاسيون: ادلب إستهداف منظومة إسعاف أورينت بالطيران الحربي الروسي في جبل الزاوية 2-10-2015"
+  "archive_status": "removed",
+  "title": "وكالة قاسيون: ادلب إستهداف منظومة إسعاف أورينت بالطيران الحربي الروسي في جبل الزاوية 2-10-2015",
+  "description": "• Date: 02/10/2015 • Location: Jabal Al-Zawyeh - IDlib • Source: http://qasion-news.com • Ambulance damaged of Russian Airstrike",
+  "added_by": "hak",
+  "added_datestamp": "Sun, November 29th 2015 at 4:31 PM",
+  "checklog": [{
+    "username": "hak",
+    "log_entry": "changed status to In Progress",
+    "timestamp": "Oct 11 5:45AM PST"
+    }, {
+      "username": "hak",
+      "log_entry": "added this report",
+      "timestamp": "Oct 11 5:45AM PST"
+    }]
+  },
+  {
+  "id": "2",
+  "media_object": "map-annotated.jpg",
+  "origin_url": "https://bellingcat.checkdesk.org/en/report/979",
+  "type": "map",
+  "source_domain": "FB",
+  "source_username": "Ministry of Defence of the Russian Federation",
+  "verification_status": "In progress",
+  "archive_status": "live",
+  "title": "Photos from Ministry of Defence of the... - Ministry of Defence of the Russian Federation | Facebook",
+  "description": "Russian MoD map, released Nov 27",
+  "added_by": "nyakland",
+  "added_datestamp": "Sun, November 29th 2015 at 4:31 PM",
+  "checklog": [{
+    "username": "hak",
+    "log_entry": "changed status to In Progress",
+    "timestamp": "Oct 11 5:45AM PST"
+    }, {
+      "username": "hak",
+      "log_entry": "added this report",
+      "timestamp": "Oct 11 5:45AM PST"
+    }]
   }
 ]

@@ -11,33 +11,53 @@
     <div class="reports">
       <% data.reports.each do |r| %>
         <div class="report <%= r.type %> <%= r.archive_status %>">
-          <div class="media-object">
-            <img src="/images/prototype/<%=r.type%>-<%=r.archive_status%>.png">
+
+          <!-- Media object -->
+          <div class="media_object">
+            <img src="/images/prototype/<%=r.media_object%>">
           </div>
-          <div class="verification_status">
+
+          <!-- Title -->
+          <div class="title">
+            <%= r.title %>
+          </div>
+
+          <!-- Description -->
+          <div class="description">
+            <%= r.description %>
+          </div>
+
+          <!-- Source: Often A username, or channel name -->
+          <div class="source-username">
+            <%= r.source_username %>
+          </div>
+
+          <!-- Source domain: eg youtube -->
+          <div class="added-by">
+            <span class="source-domain"><%= r.source_domain %></span> 
+            <span class="datestamp"><%= r.added_datestamp %></span> 
+            <span class="username"><%= r.added_by %></span>
+          </div>
+
+          <!-- Verification status: eg, false -->
+          <div class="verification-status">
             <%= r.verification_status %>
           </div>
-          <div class="id">
-            <%= r.id %>
-            </div>
 
-          <div class="origin_url">
-            <%= r.origin_url %>
+          <div class="check_log">
+            <h4><%= r.checklog.count %> Verification notes</h4>
+            <ul>
+            <% r.checklog.each do |entry| %>
+              <li>
+                <span class="username"><%= entry.username %></span> 
+                <span class="log-entry"><%= entry.log_entry %></span>
+                <span class="timestamp"><%= entry.timestamp %></span>
+              </li>
+            <% end %>
+            </ul>
           </div>
-
-          <div class="type">
-            <%= r.type %>
-          </div>
-
-          <div class="source">
-            <%= r.source %>
-          </div>
-
-          <div class="added_by">
-            <%= r.added_by %></div>
-          </div>
-        <div>
-      <% end %>        
+        </div>
+      <% end %>   
     </div>
 
     <footer class="meta">
