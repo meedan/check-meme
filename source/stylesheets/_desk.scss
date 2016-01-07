@@ -54,12 +54,12 @@ body.project {
       background-color: $soft-yellow;
     }
     &.false {
-      background-color: red;
+      background-color: $false-red;
       color: white;
     }
     &.verified {
       color: white;
-      background-color: green;
+      background-color: $verified-green;
     }
  } 
 
@@ -113,12 +113,15 @@ body.project {
   .checklog--header {
     display: flex;
     h4 {
+      flex: 4 auto;
       margin: 0;
-      width: 90%;
+      width: 80%;
     }
     .checklog--actions {
-      margin-right: 0;
+      flex: 1 auto;
+      width: 20%;
       color: $firefly40;
+      text-align: right;
     }
   }
   p {

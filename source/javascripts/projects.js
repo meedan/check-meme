@@ -8,4 +8,13 @@ $(document).ready(function() {
   // Will create a class on the body element "table"
   $('.js-queries').append("&nbsp;" + queries.view + " view");
   $('body').addClass(queries.view);
+
+  // Staggered fade in
+  // 
+  $('.report').hide();
+  $(window).load(function() {
+    $(".report").each(function(i) {
+       $(this).delay((i + 1) * 50).fadeIn();
+    });
+  });
 });
