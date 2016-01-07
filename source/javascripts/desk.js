@@ -20,12 +20,21 @@ $(document).ready(function() {
     alert($('this').class);
   });
 
-  // Staggered fade in
+  // Staggered fade in: reports
   // 
   $('.report').hide();
   $(window).load(function() {
     $(".report").each(function(i) {
        $(this).delay((i + 1) * 50).fadeIn();
+    });
+  });
+
+  // Staggered fade in: team members
+  // 
+  $('.project--team .member').hide();
+  $(window).load(function() {
+    $(".member").each(function(i) {
+       $(this).delay((i + 1) * 100).fadeIn();
     });
   });
 });
