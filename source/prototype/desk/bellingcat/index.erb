@@ -3,3 +3,73 @@ title: Checkdesk 3.0 Prototype
 description: Create antiviral social media
 layout: desk
 ---
+
+<h3 class="js-queries">Project: Bellingcat</h3>
+
+<div class="reports">
+  <% data.reports.each do |r| %>
+    <div class="report <%= r.type %> <%= r.archive_status %>">
+
+      <!-- Media object -->
+      <div class="media-object">
+        <img src="/images/prototype/<%=r.media_object%>">
+      </div>
+
+      <!-- Title -->
+      <div class="title">
+        <i class="fa fa-<%= r.source_type_icon %>"></i>
+        <%= r.title %>
+      </div>
+
+      <!-- Description -->
+      <div class="description">
+        <%= r.description %>
+      </div>
+
+      <!-- Source: Often A username, or channel name -->
+      <div class="source-username">
+        <%= r.source_username %>
+      </div>
+
+      <!-- Source domain: eg youtube -->
+      <div class="added-by">
+        <span class="source-domain">
+          <i class="fa fa-<%= r.source_domain_icon %>"></i>
+        </span> 
+        <span class="datestamp"><%= r.added_datestamp %></span> 
+        <span class="username"><%= r.added_by %></span>
+      </div>
+
+      <div class="checklog">
+        <div class="checklog--header">
+          <h4><%= r.checklog.count %> Verification notes</h4>
+          <div class="checklog--actions">
+            <i class="fa fa-share"></i> 
+            <i class="fa fa-flag"></i>
+          </div>
+        </div>
+        <ul>
+
+        <% r.checklog.reverse_each do |entry| %>
+          <li class="checklog--entry">
+            <div class="checklog--entry-icons">
+              <img class="avatar" src="/images/prototype/<%= entry.username %>.png">
+            </div>
+            <div class="checklog--entry-body">
+              <span class="username"><%= entry.username %></span> 
+              <span class="log-entry"><%= entry.log_entry %></span>
+              <span class="timestamp"><%= entry.timestamp %></span>
+            </div>
+          </li>
+        <% end %>
+        </ul>
+      </div>
+
+      <!-- Verification status: eg, false -->
+      <div class="verification-status js-show-report <%= r.verification_status %>">
+        <%= r.verification_status %> <span class="attribution-team">by Bellingcat</span>
+      </div>
+    </div>
+  <% end %> 
+
+</div>

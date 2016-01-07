@@ -60,11 +60,11 @@
   "checklog": [{
     "username": "hak",
     "log_entry": "changed status to In Progress",
-    "timestamp": "Oct 11 5:45AM PST"
+    "timestamp": "Oct 11 2:45AM PST"
     }, {
       "username": "hak",
       "log_entry": "<p>added this report</p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 1:45AM PST"
     }]
   },
 
@@ -88,7 +88,7 @@
     }, {
       "username": "hak",
       "log_entry": "<p>added this report</p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 2:45AM PST"
     }]
   },
 
@@ -108,7 +108,7 @@
   "checklog": [{
     "username": "eliot",
     "log_entry": "<div class='status-change false'>changed the status to <em>false</em></div>",
-    "timestamp": "Oct 11 5:45AM PST"
+    "timestamp": "Oct 11 7:45AM PST"
     }, {
       "username": "eliot",
       "log_entry": "<p>This is around 50km away from the location claimed, false.</p>",
@@ -117,11 +117,11 @@
     {
       "username": "surpher",
       "log_entry": "<div class='published'>Published on <a href='#'>Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos</a></div>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 3:45AM PST"
     }, {
       "username": "trbrtc",
       "log_entry": "<p>Location: <a href='http://wikimapia.org/#lang=en&lat=35.798636&lon=38.221457&z=16&m=b&search=Khafsa%20Kabir'>http://wikimapia.org/#lang=en&lat=35.798636&lon=38.221457&z=16&m=b&searc...</a> <br> Has been struck before: <a href='https://twitter.com/trbrtc/status/669924616689840132'>https://twitter.com/trbrtc/status/669924616689840132</a></p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 3:05AM PST"
     },
     {
       "username": "trbrtc",
@@ -131,7 +131,7 @@
     {
       "username": "trbrtc",
       "log_entry": "<p>Added this report</p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 1:45AM PST"
     }
     ]
   },
@@ -151,11 +151,11 @@
   "checklog": [{
     "username": "eliot",
     "log_entry": "<div class='status-change false'>changed the status to <em>false</em></div>",
-    "timestamp": "Oct 11 5:45AM PST"
+    "timestamp": "Nov 12 8:45AM PST"
     }, {
       "username": "eliot",
       "log_entry": "<p>This is around 50km away from the location claimed, false.</p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Nov 09 5:45AM PST"
     },
     {
       "username": "surpher",
@@ -194,7 +194,7 @@
   "checklog": [{
     "username": "eliot",
     "log_entry": "<p class='status-change verified'>changed the status to <em>verified</em></p> <p>Correct location, looks like oil trucks burning in the video. verified.</p>",
-    "timestamp": "Oct 14 5:45AM PST"
+    "timestamp": "Oct 14 7:45AM PST"
     }, {
       "username": "trbrtc",
       "log_entry": "RSF Media Office uploaded a video showing the aftermath of the strikes. <a href='https://www.youtube.com/watch?v=SPlHYsTChqg'https://www.youtube.com/watch?v=SPlHYsTChqg>https://www.youtube.com/watch?v=SPlHYsTChqg</a>",
@@ -207,17 +207,17 @@
     {
       "username": "surpher",
       "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
-      "timestamp": "Oct 13 5:45AM PST"
+      "timestamp": "Oct 13 5:30AM PST"
     },
     {
       "username": "surpher",
       "log_entry": "<p>Published in <a href='#'>Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos</a></p>",
-      "timestamp": "Oct 12 5:45AM PST"
+      "timestamp": "Oct 12 3:45AM PST"
     },
     {
       "username": "surpher",
       "log_entry": "Added this report",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 2:45AM PST"
     }
     ]
   },
@@ -237,11 +237,11 @@
   "checklog": [{
     "username": "samir",
     "log_entry": "<p class='status-change verified'>changed the status to <em>verified</em></p>",
-    "timestamp": "Oct 11 5:45AM PST"
+    "timestamp": "Oct 11 7:46AM PST"
     }, {
       "username": "samir",
       "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p> <p>impact at these two sites here <a href='https://twitter.com/obretix/status/674353190654115841'>https://twitter.com/obretix/status/674353190654115841</a></p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 6:45AM PST"
     },
     {
       "username": "vp.kivimaki_17",
@@ -270,12 +270,51 @@
     {
       "username": "maxim",
       "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
-      "timestamp": "Oct 11 5:45AM PST"
+      "timestamp": "Oct 11 5:35AM PST"
     },
     {
       "username": "maxim",
       "log_entry": "<p>added this report</p>",
+      "timestamp": "Oct 11 5:25AM PST"
+    }]
+  },
+  {
+  "media_object": "1018.png",
+  "origin_url": "https://bellingcat.checkdesk.org/en/report/1018",
+  "type": "tweet",
+  "verification_status": "<i class='fa fa-check-close'></i> false",
+  "archive_status": "live",
+  "title": "Twitter / Hamosh: How strange they fou...",
+  "description": "Is this a new video? Does it really show the Russian pilot being shot at over Turkey?",
+  "source_type_icon": "fa-play-circle-o ",
+  "source_domain_icon": "twitter",
+  "source_username": "Hamosh",
+  "added_datestamp": "Thu, December 10th 2015 at 5:23 PM ",
+  "added_by": "tomt",
+  "checklog": [{
+      "username": "admin",
+      "log_entry": "<div class='status-change false'>changed the status to <em>false</em></div>",
       "timestamp": "Oct 11 5:45AM PST"
+    },
+    {
+      "username": "tomt",
+      "log_entry": "<p>The Storyful team have found an older version - it's from at least 2013: <a href='https://twitter.com/Storyful/status/669104262148919296'>https://twitter.com/Storyful/status/669104262148919296</a></p>",
+      "timestamp": "Oct 11 5:45AM PST"
+    },
+    {
+      "username": "tomt",
+      "log_entry": "<p>It's strange this came out so quickly, is there an older version of this video?</p>",
+      "timestamp": "Oct 11 5:45AM PST"
+    },
+    {
+      "username": "tomt",
+      "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
+      "timestamp": "Oct 11 5:35AM PST"
+    },
+    {
+      "username": "tomt",
+      "log_entry": "<p>added this report</p>",
+      "timestamp": "Oct 11 5:25AM PST"
     }]
   }
 ]

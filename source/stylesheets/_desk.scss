@@ -1,9 +1,14 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 
+// Project page
+// 
+body.project {
+  background-color: $firefly80;
+}
+
 // Reports list
 // 
 .reports {
-  background-color: $firefly80;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
@@ -80,8 +85,14 @@
 .added-by {
   .source-domain { 
     color: black;
-    padding: 0.5em;
+    padding: 0.5em 0;
     border-radius: 4px;
+    .fa-youtube-play {
+      color: $youtube-red;
+    }
+    .fa-facebook-official {
+      color: $facebook-blue;
+    }
   }
   .datestamp { font-style: italic; }
   .username { 
@@ -92,6 +103,8 @@
   }
  }
 
+// The checklog
+// 
 .checklog {
   background-color: $firefly50;
   padding: 1em;
@@ -135,7 +148,7 @@
           max-width: 30px;
           border-radius: 4px;
           vertical-align: middle;
-          margin-left: -50%;
+          margin-left: 3em;
           margin-top: 0.5em;
         } 
       }
@@ -172,20 +185,26 @@
   }
 }
 
-// Table theme
-body.table {
+// Project with a "dense" theme
+// 
+body.dense {
   font-size: 12px;
   .reports {
+    padding: 150px 0 500px;
     .report {
       margin: 0.3em auto;
-      width: 50%;
+      width: 680px;
       max-width: 50%;
       padding: 0.6em 0em 0em;
       & > * {
         padding: 0.2em 1em;
       }
+
       .title {
         font-size: 12px;
+        .fa {
+          color: $firefly40;
+        }
       }
       .description {
         display: none;
@@ -200,7 +219,14 @@ body.table {
         padding: 0 1em;
       }
       .checklog {
+        // Toggled with js
         display: none;
+      }
+
+      &:first-of-type {
+        .checklog {
+          display: block;
+        }
       }
     }
   }
