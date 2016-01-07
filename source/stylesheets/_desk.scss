@@ -1,12 +1,5 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 
-// Project page
-// 
-body.project {
-  // background-color: $thatch5-warm;
-  background: $firefly80;
-}
-
 // Header
 // 
 .project-header {
@@ -14,6 +7,8 @@ body.project {
   padding: 2em;
   font-size: 14px!important;
   display: flex;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 
@@ -271,7 +266,6 @@ body.project {
 body.condensed {
   font-size: 12px;
   .reports {
-    padding: 20px 0;
     .report {
       margin: 1em auto;
       width: 680px;
@@ -306,6 +300,28 @@ body.condensed {
   }
 }
 
-
+// Layout themes
+// 
 @import "desk-grid";
 @import "desk-timeline";
+
+
+// Color themes
+%dark-theme {
+  background: $firefly80;
+  .view-toggle a {
+    color: white;
+  }
+}
+
+%light-theme {
+  background-color: $thatch5-warm;
+  .report {
+    box-shadow: 0 2px 3px $firefly20;
+  }
+}
+
+body.project {
+  // @extend %light-theme;
+  @extend %dark-theme;
+}

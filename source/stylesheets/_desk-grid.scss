@@ -15,5 +15,13 @@ body.grid {
 
   .checklog {
     display: none;
+    ul {
+      padding-left: 5px;
+      overflow: hidden;
+      img.avatar {
+        width: 10px;
+        height: 10px;
+      }
+    }
   }
 }

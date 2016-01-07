@@ -5,13 +5,6 @@ layout: desk
 ---
 <div class="project-header">
   <h3 class="js-queries">Checkdesk > Bellingcat > Project > Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos</h3>
-  <div class="view-toggle">
-    <ul>
-      <li class="js-view-class"><a class="default" href="/prototype/desk/bellingcat"><i class="fa fa-picture-o"></i>Expanded</a></li>
-      <li class="js-view-class"><a class="timeline" href="/prototype/desk/bellingcat?view=timeline"><i class="fa fa-list-ul"></i>Timeline</a></li>
-      <li class="js-view-class"><a class="grid" href="/prototype/desk/bellingcat?view=grid"><i class="fa fa-th"></i>Grid</a></li>
-    </ul>
-  </div>
 
   <div class="project--team">
     <div class="headers">
@@ -30,5 +23,15 @@ layout: desk
   </div>
 </div>
 
-<%= partial "partials/reports" %>
-<%= partial "partials/reports" %>
+<div class="view-toggle">
+  <ul>
+    <li class="js-view-class"><a class="default" href="/prototype/desk/bellingcat"><i class="fa fa-picture-o"></i>Expanded</a></li>
+    <li class="js-view-class"><a class="timeline" href="/prototype/desk/bellingcat?view=timeline"><i class="fa fa-list-ul"></i>Timeline</a></li>
+    <li class="js-view-class"><a class="grid" href="/prototype/desk/bellingcat?view=grid"><i class="fa fa-th"></i>Grid</a></li>
+  </ul>
+</div>
+
+<div class="reports">
+  <%= partial "partials/reports" %>
+  <%= partial "partials/reports" %>
+</div>
