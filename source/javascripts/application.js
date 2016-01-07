@@ -22,7 +22,10 @@ $(document).ready(function() {
   // Render the querystring 
   // for the link detail page prototype support
   // 
-  $('.js-queries').text(queries.source);
+  // Eg: http://10.0.1.3:4567/prototype/desk/bellingcat?view=table
+  // Will create a class on the body element "table"
+  $('.js-queries').append(queries.view + " view");
+  $('body').addClass(queries.view);
 
   // Toggle the reports
   //

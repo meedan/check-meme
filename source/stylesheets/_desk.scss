@@ -171,3 +171,38 @@
     }
   }
 }
+
+// Table theme
+body.table {
+  font-size: 12px;
+  .reports {
+    .report {
+      margin: 0.3em auto;
+      width: 50%;
+      max-width: 50%;
+      padding: 0.6em 0em 0em;
+      & > * {
+        padding: 0.2em 1em;
+      }
+      .title {
+        font-size: 12px;
+      }
+      .description {
+        display: none;
+      }
+      img {
+        max-width: 50px;
+        border-radius: 5px;
+        float: right;
+      }
+      p {
+        margin: 0!important;
+        padding: 0 1em;
+      }
+      .checklog {
+        display: none;
+      }
+    }
+  }
+}
+
