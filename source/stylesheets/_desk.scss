@@ -25,6 +25,7 @@ body.project {
   max-width: 600px;
   margin: 1em auto;
   overflow: hidden;
+  display: none;
 
   & > * {
     padding: 0.5em;
@@ -94,7 +95,9 @@ body.project {
       color: $facebook-blue;
     }
   }
-  .datestamp { font-style: italic; }
+  .datestamp { 
+    color: $firefly30;
+  }
   .username { 
     font-weight: 700; 
     &:before {
@@ -231,6 +234,58 @@ body.dense {
           display: block;
         }
       }
+    }
+  }
+}
+
+
+// Project with a "dense alt" theme
+// 
+body.dense-alt {
+  @extend .dense;
+
+  .reports {
+    border-left: 1px solid rgba(white,0.7);
+    width: 410px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .report {
+    max-width: 100%;
+    margin-top: 2em!important;
+  }
+
+  .added-by {
+    position: absolute;
+    z-index: 2;
+    left: -11px;
+    height: 20px;
+    width: 20px;
+    padding: 3px 5px!important;
+    margin-top: -50px;
+    background-color: white;
+    display: block;
+    border-radius: 10px;
+    font-size: smaller;
+    &:before {
+      z-index: 1;
+      content: "";
+      border-bottom: 1px solid rgba(white, 0.7);
+      width: 50px;
+      top: 10px;
+      right: -50px;
+      display: block;
+      position: absolute;
+    }
+    .username {
+      display: none;
+    }
+    .datestamp {
+      position: absolute;
+      left: -100px;
+      top: -3px;
+      width: 100px;
     }
   }
 }
