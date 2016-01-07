@@ -10,10 +10,9 @@
 //= require "views/meme-editor"
 //= require "helpers/font-monitor"
 //= require "helpers/ease-in"
-//= require "projects.js"
 
 // Checkdesk prototyping
 // 
 //= require "helpers/queries"
 //= require "reports"
-//= require "projects"
+//= require "desk"

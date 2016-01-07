@@ -3,73 +3,32 @@ title: Checkdesk 3.0 Prototype
 description: Create antiviral social media
 layout: desk
 ---
+<div class="project-header">
+  <h3 class="js-queries">Checkdesk > Bellingcat > Project > Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos</h3>
+  <div class="view-toggle">
+    <ul>
+      <li class="js-view-class"><a class="default" href="/prototype/desk/bellingcat"><i class="fa fa-picture-o"></i>Expanded</a></li>
+      <li class="js-view-class"><a class="timeline" href="/prototype/desk/bellingcat?view=timeline"><i class="fa fa-list-ul"></i>Timeline</a></li>
+      <li class="js-view-class"><a class="grid" href="/prototype/desk/bellingcat?view=grid"><i class="fa fa-th"></i>Grid</a></li>
+    </ul>
+  </div>
 
-<h3 class="js-queries">Project: Bellingcat</h3>
-
-<div class="reports">
-  <% data.reports.each do |r| %>
-    <div class="report <%= r.type %> <%= r.archive_status %>">
-
-      <!-- Media object -->
-      <div class="media-object">
-        <img src="/images/prototype/<%=r.media_object%>">
-      </div>
-
-      <!-- Title -->
-      <div class="title">
-        <i class="fa fa-<%= r.source_type_icon %>"></i>
-        <%= r.title %>
-      </div>
-
-      <!-- Description -->
-      <div class="description">
-        <%= r.description %>
-      </div>
-
-      <!-- Source: Often A username, or channel name -->
-      <div class="source-username">
-        <%= r.source_username %>
-      </div>
-
-      <!-- Source domain: eg youtube -->
-      <div class="added-by">
-        <span class="source-domain">
-          <i class="fa fa-<%= r.source_domain_icon %>"></i>
-        </span> 
-        <span class="datestamp"><%= r.added_datestamp %></span> 
-        <span class="username"><%= r.added_by %></span>
-      </div>
-
-      <div class="checklog">
-        <div class="checklog--header">
-          <h4><%= r.checklog.count %> Verification notes</h4>
-          <div class="checklog--actions">
-            <i class="fa fa-share"></i> 
-            <i class="fa fa-flag"></i>
-          </div>
-        </div>
-        <ul>
-
-        <% r.checklog.reverse_each do |entry| %>
-          <li class="checklog--entry">
-            <div class="checklog--entry-icons">
-              <img class="avatar" src="/images/prototype/<%= entry.username %>.png">
-            </div>
-            <div class="checklog--entry-body">
-              <span class="username"><%= entry.username %></span> 
-              <span class="log-entry"><%= entry.log_entry %></span>
-              <span class="timestamp"><%= entry.timestamp %></span>
-            </div>
-          </li>
-        <% end %>
-        </ul>
-      </div>
-
-      <!-- Verification status: eg, false -->
-      <div class="verification-status js-show-report <%= r.verification_status %>">
-        <%= r.verification_status %> <span class="attribution-team">by Bellingcat</span>
-      </div>
+  <div class="project--team">
+    <div class="headers">
+      <h3>Join our project</h3>
+      <h4>Eliot, Hak, Maxim and 7 others</h4>
     </div>
-  <% end %> 
-
+    <div class="members">
+      <div class="member"><img src="/images/prototype/eliot.png"></div>
+      <div class="member"><img src="/images/prototype/hak.png"></div>
+      <div class="member"><img src="/images/prototype/maxim.png"></div>
+      <div class="member"><img src="/images/prototype/samir.png"></div>
+      <div class="member"><img src="/images/prototype/sergey.png"></div>
+      <div class="member"><img src="/images/prototype/surpher.png"></div>
+      <div class="member"><img src="/images/prototype/vp.kivimaki_17.png"></div>
+    </div>
+  </div>
 </div>
+
+<%= partial "partials/reports" %>
+<%= partial "partials/reports" %>

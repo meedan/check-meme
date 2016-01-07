@@ -3,7 +3,84 @@
 // Project page
 // 
 body.project {
-  background-color: $firefly80;
+  // background-color: $thatch5-warm;
+  background: $firefly80;
+}
+
+// Header
+// 
+.project-header {
+  background-color: white;
+  padding: 2em;
+  font-size: 14px!important;
+  display: flex;
+}
+
+
+// Stylesheet switcher
+// 
+.view-toggle {
+  width: 500px;
+  ul {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    li {
+      margin: 0 1em;
+    }
+  }
+  i {
+    padding: 0.5em;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  li.default a.default, 
+  li.condensed a.condensed, 
+  li.grid a.grid, 
+  li.timeline a.timeline {
+    font-weight: bold;
+    color: $dodger-blue;
+  }
+}
+
+// Team members
+// 
+.project--team {
+  display: flex;
+  width: 400px;
+  .headers {
+    width: 50%;
+    h3, h4 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .members {
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    .member {
+      &:first-of-type {
+        img {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+      }
+      &:last-of-type {
+        img {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+      img {
+        padding: 0;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
 }
 
 // Reports list
@@ -11,24 +88,23 @@ body.project {
 .reports {
   display: flex;
   flex-flow: column nowrap;
+  align-items: flex-start;
   width: 100%;
 }
 
-// A Report 
+// A Report: Default view (expanded)
 // 
 .report {
   background-color: white;
   border-radius: 5px;
   color: $firefly80;
-  min-width: 300px;
-  width: 400px;
-  max-width: 600px;
-  margin: 1em auto;
+  width: 500px;
+  margin: 2em auto;
   overflow: hidden;
   display: none;
 
   & > * {
-    padding: 0.5em;
+    padding: 0 0.5em;
   }
 
   // The media object core
@@ -36,6 +112,7 @@ body.project {
   .media-object {
     padding: 0;
     img {
+      width: 100%;
       max-width: 100%;
     }
   }
@@ -43,7 +120,7 @@ body.project {
   // The title of the media object
   // 
   .title {
-    font-size: 1.4em;
+    // font-size: 1.4em;
   }
 
   // The status on a report
@@ -51,6 +128,10 @@ body.project {
  .verification-status {
     color: rgba(black,0.7);
     text-transform: capitalize;
+    padding: 0.5em 1em!important;
+    &:hover {
+      cursor: pointer;
+    }
     &.progress {
       background-color: $soft-yellow;
     }
@@ -67,25 +148,15 @@ body.project {
  // The upstream origin URL
  // 
  .source-username {
-  color: blue;
- }
-
- // The type of report
- // 
- .type {
-  border-bottom: 1px solid $firefly80;
- }
-
- // The report source (eg youtube:user)
- // 
- .source {
-
+  color: $dodger-blue;
  }
 
  // Which user added the report
+ // 
 .added-by {
+  padding: 0.5em 1em!important;
   .source-domain { 
-    color: black;
+    color: $firefly;
     padding: 0.5em 0;
     border-radius: 4px;
     .fa-youtube-play {
@@ -149,12 +220,13 @@ body.project {
       .checklog--entry-icons {
         width: 30px;
         border-left: 1px solid $firefly30;
+        position: relative;
         .avatar {
+          position: absolute;
           width: 30px;
-          max-width: 30px;
           border-radius: 4px;
           vertical-align: middle;
-          margin-left: 3em;
+          left: -15px;
           margin-top: 0.5em;
         } 
       }
@@ -179,6 +251,9 @@ body.project {
           }
         }
         .log-entry {
+          p {
+            padding: 0;
+          }
         }
         .timestamp {
           font-size: 0.7em;
@@ -191,16 +266,15 @@ body.project {
   }
 }
 
-// Project with a "dense" theme
+// Project with a "condensed" theme
 // 
-body.dense {
+body.condensed {
   font-size: 12px;
   .reports {
-    padding: 150px 0 500px;
+    padding: 20px 0;
     .report {
-      margin: 0.3em auto;
+      margin: 1em auto;
       width: 680px;
-      max-width: 50%;
       padding: 0.6em 0em 0em;
       & > * {
         padding: 0.2em 1em;
@@ -228,65 +302,10 @@ body.dense {
         // Toggled with js
         display: none;
       }
-
-      &:first-of-type {
-        .checklog {
-          display: block;
-        }
-      }
     }
   }
 }
 
 
-// Project with a "dense alt" theme
-// 
-body.dense-alt {
-  @extend .dense;
-
-  .reports {
-    border-left: 1px solid rgba(white,0.7);
-    width: 410px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .report {
-    max-width: 100%;
-    margin-top: 2em!important;
-  }
-
-  .added-by {
-    position: absolute;
-    z-index: 2;
-    left: -11px;
-    height: 20px;
-    width: 20px;
-    padding: 3px 5px!important;
-    margin-top: -50px;
-    background-color: white;
-    display: block;
-    border-radius: 10px;
-    font-size: smaller;
-    &:before {
-      z-index: 1;
-      content: "";
-      border-bottom: 1px solid rgba(white, 0.7);
-      width: 50px;
-      top: 10px;
-      right: -50px;
-      display: block;
-      position: absolute;
-    }
-    .username {
-      display: none;
-    }
-    .datestamp {
-      position: absolute;
-      left: -100px;
-      top: -3px;
-      width: 100px;
-    }
-  }
-}
-
+@import "desk-grid";
+@import "desk-timeline";
