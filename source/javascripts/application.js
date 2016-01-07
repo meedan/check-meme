@@ -23,4 +23,12 @@ $(document).ready(function() {
   // for the link detail page prototype support
   // 
   $('.js-queries').text(queries.source);
+
+  // Toggle the reports
+  //
+  $('.js-show-report').click(function(e) {
+    $(this).prev().slideToggle();
+    e.preventDefault();
+  });
+
 });
