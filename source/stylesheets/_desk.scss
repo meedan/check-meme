@@ -5,6 +5,7 @@
 .reports {
   background-color: $firefly80;
   display: flex;
+  flex-flow: column nowrap;
   width: 100%;
 }
 
@@ -15,8 +16,9 @@
   border-radius: 10px;
   color: $firefly80;
   min-width: 300px;
+  width: 400px;
   max-width: 600px;
-  margin: 1em;
+  margin: 1em auto;
   overflow: hidden;
 
   & > * {
@@ -66,11 +68,9 @@
  // Which user added the report
  .added-by {
   .source-domain { 
-    background-color: black;
-    color: white;
+    color: black;
     padding: 0.5em;
     border-radius: 4px;
-    color: white; 
   }
   .datestamp { font-style: italic; }
   .username { 
@@ -79,5 +79,62 @@
       content: "by ";
     }
   }
- } 
+ }
+
+ .checklog {
+  background-color: $firefly50;
+  padding: 1em;
+  font-size: smaller;
+  line-height: 1.4;
+  p {
+    margin: 1em 0;
+  }
+  a {
+    vertical-align: bottom;
+    display: inline-block;
+    max-width: 250px;
+    color: $dodger-blue;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    white-space: nowrap;
+    line-height: 1.4
+  }
+  ul {
+    list-style-type: none;
+    li.checklog--entry {
+      display: flex;
+      .checklog--entry-icons {
+        width: 30px;
+        border-left: 1px solid $firefly40;
+        .avatar {
+          width: 30px;
+          max-width: 30px;
+          border-radius: 4px;
+          vertical-align: middle;
+          margin-left: -50%;
+          margin-top: 0.5em;
+        } 
+      }
+      .checklog--entry-body {
+        padding: 0.5em;
+        .username {
+          font-size: 1.2em;
+          font-weight: bold;
+          display: block;
+        }
+        .status-change {
+          
+        }
+        .log-entry {}
+        .timestamp {
+          font-size: 0.7em;
+          color: $firefly40;
+          display: block;
+        }
+      }
+    }
+    }
+  }
 }
