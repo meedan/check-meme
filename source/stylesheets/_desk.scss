@@ -1,3 +1,5 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+
 // Reports list
 // 
 .reports {
@@ -13,7 +15,7 @@
   border-radius: 10px;
   color: $firefly80;
   min-width: 300px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 1em;
   overflow: hidden;
 
@@ -26,7 +28,7 @@
   .media-object {
     padding: 0;
     img {
-      max-width: 500px;
+      max-width: 100%;
     }
   }
 
