@@ -149,15 +149,19 @@
           </div>
 
           <!-- Verification status: eg, false -->
-          <div class="verification-status">
+          <div class="verification-status <%= r.verification_status %>">
             <i class="fa fa-random"></i> 
             <%= r.verification_status %> <span class="attribution-team">by Bellingcat</span>
-            <i class="fa fa-share"></i> 
-            <i class="fa fa-flag"></i> 
           </div>
 
           <div class="checklog">
-            <h4><%= r.checklog.count %> Verification notes</h4>
+            <div class="checklog--header">
+              <h4><%= r.checklog.count %> Verification notes</h4>
+              <div class="checklog--actions">
+                <i class="fa fa-share"></i> 
+                <i class="fa fa-flag"></i>
+              </div>
+            </div>
             <ul>
             <% r.checklog.each do |entry| %>
               <li class="checklog--entry">

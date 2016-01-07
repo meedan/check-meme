@@ -13,7 +13,7 @@
 // 
 .report {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   color: $firefly80;
   min-width: 300px;
   width: 400px;
@@ -43,8 +43,15 @@
   // The status on a report
   // 
  .verification-status {
-    background-color: yellow;
-    color: black;
+    color: rgba(black,0.7);
+    text-transform: capitalize;
+    &.progress {
+      background-color: $soft-yellow;
+    }
+    &.verified {
+      color: white;
+      background-color: green;
+    }
  } 
 
  // The upstream origin URL
@@ -66,7 +73,7 @@
  }
 
  // Which user added the report
- .added-by {
+.added-by {
   .source-domain { 
     color: black;
     padding: 0.5em;
@@ -81,13 +88,24 @@
   }
  }
 
- .checklog {
+.checklog {
   background-color: $firefly50;
   padding: 1em;
   font-size: smaller;
   line-height: 1.4;
+  .checklog--header {
+    display: flex;
+    h4 {
+      margin: 0;
+      width: 90%;
+    }
+    .checklog--actions {
+      margin-right: 0;
+      color: $firefly40;
+    }
+  }
   p {
-    margin: 1em 0;
+    margin: 0.6em 0;
   }
   a {
     vertical-align: bottom;
@@ -107,7 +125,7 @@
       display: flex;
       .checklog--entry-icons {
         width: 30px;
-        border-left: 1px solid $firefly40;
+        border-left: 1px solid $firefly30;
         .avatar {
           width: 30px;
           max-width: 30px;
@@ -125,9 +143,20 @@
           display: block;
         }
         .status-change {
-          
+          font-weight: bold;
+          em {
+            font-style: normal;
+            text-transform: capitalize;
+          }
+          &.verified {
+            color: green;
+          }
+          &.progress {
+
+          }
         }
-        .log-entry {}
+        .log-entry {
+        }
         .timestamp {
           font-size: 0.7em;
           color: $firefly40;

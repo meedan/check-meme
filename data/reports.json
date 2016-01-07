@@ -5,7 +5,7 @@
   "source_type_icon": "video-camera",
   "source_domain_icon": "youtube-play",
   "source_username": "وكالة قاسيون للانباء",
-  "verification_status": "In progress",
+  "verification_status": "in progress",
   "archive_status": "removed",
   "title": "وكالة قاسيون: ادلب إستهداف منظومة إسعاف أورينت بالطيران الحربي الروسي في جبل الزاوية 2-10-2015",
   "description": "<p>Date: 02/10/2015</p><p>Location: Jabal Al-Zawyeh - IDlib</p><p>Source: http://qasion-news.com</p><p>Ambulance damaged of Russian Airstrike</p>",
@@ -13,7 +13,7 @@
   "added_datestamp": "Sun, November 29th 2015 at 4:31 PM",
   "checklog": [{
     "username": "hak",
-    "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+    "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
     "timestamp": "Oct 11 5:45AM PST"
     }, {
       "username": "hak",
@@ -28,7 +28,7 @@
   "source_type_icon": "map",
   "source_domain_icon": "facebook-official",
   "source_username": "Ministry of Defence of the Russian Federation",
-  "verification_status": "In progress",
+  "verification_status": "in progress",
   "archive_status": "live",
   "title": "Photos from Ministry of Defence of the... - Ministry of Defence of the Russian Federation | Facebook",
   "description": "Russian MoD map, released Nov 27",
@@ -36,7 +36,7 @@
   "added_datestamp": "Sun, November 29th 2015 at 4:31 PM",
   "checklog": [{
     "username": "hak",
-    "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+    "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
     "timestamp": "Oct 11 5:45AM PST"
     }, {
       "username": "hak",
@@ -48,7 +48,7 @@
   "media_object": "835.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/835",
   "type": "video",
-  "verification_status": "In progress",
+  "verification_status": "in progress",
   "archive_status": "live",
   "title": "معاذ الشامي _ الطيران الروسي يرتكب مجزرة مروعة في بلدة #إحسم بريف ادلب ضحيتها خمسة أطفال وأمهم ",
   "description": "<p>Date: 03/10/2015</p> <p>Location: Ihsim, Idlib country side Damage buildings, and an Interview with a man who lost his family as a result of the Russian attack</p> <p>Source: Muaz Al-shami citizen journalist in Idlib</p>",
@@ -72,7 +72,7 @@
   "media_object": "836.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/836",
   "type": "video",
-  "verification_status": "In progress",
+  "verification_status": "in progress",
   "archive_status": "live",
   "title": "معاذ الشامي _ الطيران الروسي يرتكب أكبر مجزرة بحق المدنيين في بلد ة معصران بريف ادلب",
   "description": "<p>Date: 07/10/2015</p><p>Location: Masaran - Idlib country side</p><p>Source: Muaz Al-Shami citizen journalist in Idlib</p><p>Civilian causalities as a result of the Russian Attack</p>",
@@ -83,7 +83,7 @@
   "added_by": "hak",
   "checklog": [{
     "username": "hak",
-    "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+    "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
     "timestamp": "Oct 11 5:45AM PST"
     }, {
       "username": "hak",
@@ -104,7 +104,7 @@
   "source_domain_icon": "youtube-play",
   "source_username": "Минобороны России",
   "added_datestamp": "Sun, October 11th 2015 at 8:28 PM",
-  "added_by": "trbtc",
+  "added_by": "trbtrc",
   "checklog": [{
     "username": "eliot",
     "log_entry": "<div class='status-change false'>changed the status to <em>false</em></div>",
@@ -125,7 +125,7 @@
     },
     {
       "username": "trbrtc",
-      "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+      "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
       "timestamp": "Oct 11 5:45AM PST"
     },
     {
@@ -147,7 +147,7 @@
   "source_domain_icon": "youtube-play",
   "source_username": "Минобороны России",
   "added_datestamp": "Sun, October 11th 2015 at 8:28 PM",
-  "added_by": "trbtc",
+  "added_by": "trbtrc",
   "checklog": [{
     "username": "eliot",
     "log_entry": "<div class='status-change false'>changed the status to <em>false</em></div>",
@@ -168,7 +168,7 @@
     },
     {
       "username": "trbrtc",
-      "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+      "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
       "timestamp": "Oct 11 5:45AM PST"
     },
     {
@@ -182,7 +182,7 @@
   "media_object": "1011.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/1011",
   "type": "video",
-  "verification_status": "Verified",
+  "verification_status": "verified",
   "archive_status": "live",
   "title": "Авиаудар по колонне автомобилей,перевозящих нефтепродукты в провинции АЛЕППО",
   "description": "",
@@ -193,10 +193,10 @@
   "added_by": "surpher",
   "checklog": [{
     "username": "eliot",
-    "log_entry": "<div class='status-change verified'>changed the status to <em>verified</em></div> <p>Correct location, looks like oil trucks burning in the video. Verified.</p>",
+    "log_entry": "<p class='status-change verified'>changed the status to <em>verified</em></p> <p>Correct location, looks like oil trucks burning in the video. verified.</p>",
     "timestamp": "Oct 14 5:45AM PST"
     }, {
-      "username": "trbtc",
+      "username": "trbrtc",
       "log_entry": "RSF Media Office uploaded a video showing the aftermath of the strikes. <a href='https://www.youtube.com/watch?v=SPlHYsTChqg'https://www.youtube.com/watch?v=SPlHYsTChqg>https://www.youtube.com/watch?v=SPlHYsTChqg</a>",
       "timestamp": "Oct 14 5:45AM PST"
     },
@@ -206,7 +206,7 @@
     },
     {
       "username": "surpher",
-      "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+      "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
       "timestamp": "Oct 13 5:45AM PST"
     },
     {
@@ -225,7 +225,7 @@
   "media_object": "1013.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/1013",
   "type": "video",
-  "verification_status": "Verified",
+  "verification_status": "verified",
   "archive_status": "live",
   "title": "Групповой пуск крылатых ракет 'Калибр'' подлодкой 'Ростов-на-Дону' по объектам террористов в Сирии",
   "description": "Massive launch of the Kalibr sea-based missiles was effectuated by the Rostov-on-Don submarine. It resulted in elimination of two important ISIS command centres in the Raqqah province.",
@@ -236,16 +236,16 @@
   "added_by": "maxim",
   "checklog": [{
     "username": "samir",
-    "log_entry": "changed status to Verified",
+    "log_entry": "<p class='status-change verified'>changed the status to <em>verified</em></p>",
     "timestamp": "Oct 11 5:45AM PST"
     }, {
       "username": "samir",
-      "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div> <p>impact at these two sites here <a href='https://twitter.com/obretix/status/674353190654115841'>https://twitter.com/obretix/status/674353190654115841</a></p>",
+      "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p> <p>impact at these two sites here <a href='https://twitter.com/obretix/status/674353190654115841'>https://twitter.com/obretix/status/674353190654115841</a></p>",
       "timestamp": "Oct 11 5:45AM PST"
     },
     {
       "username": "vp.kivimaki_17",
-      "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div> <p>And 1:15-1:18 is also from the first strike site. So two sites in this video, both geolocated. Locations are in Raqqa governorate as indicated by the video.</p>"
+      "log_entry": "<p class='status-change verified'>changed the status to <em>verified</em></p> <p>And 1:15-1:18 is also from the first strike site. So two sites in this video, both geolocated. Locations are in Raqqa governorate as indicated by the video.</p>"
     },
     {
       "username": "vp.kivimaki_17",
@@ -269,7 +269,7 @@
     },
     {
       "username": "maxim",
-      "log_entry": "<div class='status-change in-progress'>changed the status to <em>in progress</em></div>",
+      "log_entry": "<p class='status-change progress'>changed the status to <em>in progress</em></p>",
       "timestamp": "Oct 11 5:45AM PST"
     },
     {
