@@ -48,6 +48,10 @@
     &.progress {
       background-color: $soft-yellow;
     }
+    &.false {
+      background-color: red;
+      color: white;
+    }
     &.verified {
       color: white;
       background-color: green;
