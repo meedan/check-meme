@@ -1,0 +1,32 @@
+// Stylesheet switcher
+// 
+.view-toggle {
+  width: 500px;
+  margin: 0 auto;
+  border-bottom: 1px solid $firefly20;
+  font-size: 14px!important;
+  ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    li {
+      margin: 0 1em;
+    }
+  }
+  i {
+    padding: 0.5em;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  li.default a.default, 
+  li.condensed a.condensed, 
+  li.grid a.grid, 
+  li.timeline a.timeline {
+    font-weight: bold;
+    color: $dodger-blue;
+  }
+}
