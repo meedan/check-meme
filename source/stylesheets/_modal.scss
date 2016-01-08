@@ -15,9 +15,10 @@
 }
 
 #modal {
-  position:absolute;
+  position: absolute;
   background: $dodger-blue;
-  padding:8px;
+  padding: 1em;
+  overflow: hidden;
 }
 
 #content {
@@ -28,7 +29,7 @@
 
 #close {
   position:absolute;
-  background:url(close.png) 0 0 no-repeat;
+  background: red url(close.png) 0 0 no-repeat;
   width:24px;
   height:27px;
   display:block;

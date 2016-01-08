@@ -1,0 +1,208 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
+
+// Reports list
+// 
+.reports {
+  background-color: $firefly80;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+}
+
+// A Report 
+// 
+.report {
+  background-color: white;
+  border-radius: 5px;
+  color: $firefly80;
+  min-width: 300px;
+  width: 400px;
+  max-width: 600px;
+  margin: 1em auto;
+  overflow: hidden;
+
+  & > * {
+    padding: 0.5em;
+  }
+
+  // The media object core
+  // 
+  .media-object {
+    padding: 0;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  // The title of the media object
+  // 
+  .title {
+    font-size: 1.4em;
+  }
+
+  // The status on a report
+  // 
+ .verification-status {
+    color: rgba(black,0.7);
+    text-transform: capitalize;
+    &.progress {
+      background-color: $soft-yellow;
+    }
+    &.false {
+      background-color: red;
+      color: white;
+    }
+    &.verified {
+      color: white;
+      background-color: green;
+    }
+ } 
+
+ // The upstream origin URL
+ // 
+ .source-username {
+  color: blue;
+ }
+
+ // The type of report
+ // 
+ .type {
+  border-bottom: 1px solid $firefly80;
+ }
+
+ // The report source (eg youtube:user)
+ // 
+ .source {
+
+ }
+
+ // Which user added the report
+.added-by {
+  .source-domain { 
+    color: black;
+    padding: 0.5em;
+    border-radius: 4px;
+  }
+  .datestamp { font-style: italic; }
+  .username { 
+    font-weight: 700; 
+    &:before {
+      content: "by ";
+    }
+  }
+ }
+
+.checklog {
+  background-color: $firefly50;
+  padding: 1em;
+  font-size: smaller;
+  line-height: 1.4;
+  .checklog--header {
+    display: flex;
+    h4 {
+      margin: 0;
+      width: 90%;
+    }
+    .checklog--actions {
+      margin-right: 0;
+      color: $firefly40;
+    }
+  }
+  p {
+    margin: 0.6em 0;
+  }
+  a {
+    vertical-align: bottom;
+    display: inline-block;
+    max-width: 250px;
+    color: $dodger-blue;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    white-space: nowrap;
+    line-height: 1.4
+  }
+  ul {
+    list-style-type: none;
+    li.checklog--entry {
+      display: flex;
+      .checklog--entry-icons {
+        width: 30px;
+        border-left: 1px solid $firefly30;
+        .avatar {
+          width: 30px;
+          max-width: 30px;
+          border-radius: 4px;
+          vertical-align: middle;
+          margin-left: -50%;
+          margin-top: 0.5em;
+        } 
+      }
+      .checklog--entry-body {
+        padding: 0.5em;
+        .username {
+          font-size: 1.2em;
+          font-weight: bold;
+          display: block;
+        }
+        .status-change {
+          font-weight: bold;
+          em {
+            font-style: normal;
+            text-transform: capitalize;
+          }
+          &.verified {
+            color: green;
+          }
+          &.progress {
+
+          }
+        }
+        .log-entry {
+        }
+        .timestamp {
+          font-size: 0.7em;
+          color: $firefly40;
+          display: block;
+        }
+      }
+    }
+    }
+  }
+}
+
+// Table theme
+body.table {
+  font-size: 12px;
+  .reports {
+    .report {
+      margin: 0.3em auto;
+      width: 50%;
+      max-width: 50%;
+      padding: 0.6em 0em 0em;
+      & > * {
+        padding: 0.2em 1em;
+      }
+      .title {
+        font-size: 12px;
+      }
+      .description {
+        display: none;
+      }
+      img {
+        max-width: 50px;
+        border-radius: 5px;
+        float: right;
+      }
+      p {
+        margin: 0!important;
+        padding: 0 1em;
+      }
+      .checklog {
+        display: none;
+      }
+    }
+  }
+}
+

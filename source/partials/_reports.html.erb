@@ -9,6 +9,13 @@
       <img src="/images/prototype/<%=r.media_object%>">
     </div>
 
+    <!-- Helper text (optional per report) -->
+    <% if r.helper_text %>
+      <div class="report--helper-text">
+        <%= r.helper_text %>
+      </div>
+    <% end %>
+
     <!-- Title -->
     <div class="report--title">
       <i class="fa fa-<%= r.source_type_icon %>"></i>

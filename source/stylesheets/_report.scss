@@ -61,11 +61,10 @@
   // Added-by whom
   // 
   .report--added-by {
-    // padding: 0.5em 1em!important;
+    background-color: $firefly20!important;
     .source-domain {
       color: $firefly;
       padding: 0.5em 0;
-      border-radius: 4px;
       .fa-youtube-play {
         color: $youtube-red;
       }
