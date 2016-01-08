@@ -14,17 +14,13 @@
 }
 
 body {
-  color: $default-text-color;
-  font-family: 'Helvetica';
   font-size: 16px;
-  height: 100%;
   line-height: 1.2;
   margin: 0;
-  width: 100%;
+  padding: 0;
   font-family: Lato, helvetica, Arial, sans-serif;
   color: $firefly60;
   background-color: $thatch5-warm;
-  padding: 0em;
   a {
     color: $dodger-blue;
     &:visited {
@@ -45,7 +41,7 @@ body {
   overflow: hidden;
   border-bottom: 1px solid $firefly30;
 
-  // Extra wrapper for flex
+  // inner headers wrapper
   &>.headers {
     width: 50%;
     h2 {
@@ -86,18 +82,20 @@ body.project {
   }
   .main {
     flex: 20 auto;
+    background-color: $firefly90;
   }
 }
 
 // Reports list
 // 
 .reports {
-  display: flex;
-  flex-flow: column nowrap;
   align-items: flex-start;
-  width: 100%;
-  max-width: 90%;
+  flex-flow: column nowrap;
+  display: flex;
   margin: 0 auto;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 // Color themes

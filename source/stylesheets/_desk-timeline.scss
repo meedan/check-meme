@@ -12,7 +12,6 @@ body.timeline {
   }
 
   .report.report {
-    @extend %condensed;
     width: 100%;
     @media all and (max-width: 700px) {
       width: 50%;
@@ -22,6 +21,12 @@ body.timeline {
     p { 
       padding: 0;
     }
+  }
+
+  .report--media-object img {
+    max-width: 90px;
+    border-radius: 3px;
+    float: right;
   }
 
   // At larger sizes, do a 2-col timeline treatment

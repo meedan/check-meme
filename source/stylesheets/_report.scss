@@ -8,22 +8,45 @@
 
 // Base report has a white background
 .report {
+  // is hidden until revealed by js.
+  display: none;
   background-color: white;
   border-radius: 5px;
   color: $firefly60;
-  margin: 4em auto;
   overflow: hidden;
-  // is hidden until revealed by js.
-  display: none;
-  
-  // Equal side padding on all immediate children
+  font-size: 12px;
+  margin: 1em auto;
+  width: 100%;
+  padding: 0.6em 0em 0em;
+
   & > * {
-    padding: 0 10px;
+    padding: 0.2em 1em;
   }
 
+  .report--title {
+    font-size: 12px;
+    .fa {
+      color: $firefly40;
+    }
+  }
+
+  // Description is hidden
+  // 
+  .report--description {
+    // display: none;
+  }
+
+  p {
+    margin: 0!important;
+    padding: 0 1em;
+  }
+
+  // Contextual action buttons on each report
+  //
   .report--contextual-action-menu {
     color: $firefly50;
     font-size: 22px;
+    float: left;
   }
   // The media object core
   // 
@@ -89,6 +112,8 @@
   // The checklog
   // 
   .report--checklog {
+    // Toggled with js
+    display: none;
     background-color: $firefly50;
     padding: 1em;
     font-size: smaller;
@@ -178,43 +203,5 @@
         }
       }
     }
-  }
-}
-
-%condensed {
-  font-size: 12px;
-  margin: 1em auto;
-  width: 680px;
-  padding: 0.6em 0em 0em;
-  
-  & > * {
-    padding: 0.2em 1em;
-  }
-
-  .report--title {
-    font-size: 12px;
-    .fa {
-      color: $firefly40;
-    }
-  }
-
-  .report--description {
-    display: none;
-  }
-
-  img {
-    max-width: 50px;
-    border-radius: 3px;
-    float: right;
-  }
-
-  p {
-    margin: 0!important;
-    padding: 0 1em;
-  }
-
-  .report--checklog {
-    // Toggled with js
-    display: none;
   }
 }

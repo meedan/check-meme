@@ -1,7 +1,7 @@
 // Stylesheet switcher
 // 
 ul.project--stylesheet-switcher {
-  border-bottom: 1px solid $firefly20;
+  background-color: $firefly20;
   display: flex;
   font-size: 14px!important;
   justify-content: center;
@@ -11,18 +11,21 @@ ul.project--stylesheet-switcher {
   padding: 1em;
   li {
     margin: 0 1em;
+    a {
+      text-decoration: none;
+      color: $firefly40;
+      &:hover {
+        color: $dodger-blue;
+        transition: color 0.4s;
+      }
+    }
   }
   i {
     padding: 0.5em;
   }
 
-  a {
-    text-decoration: none;
-    color: $firefly40;
-  }
-
-  li.grid a.grid, 
-  li.timeline a.timeline {
-    color: $dodger-blue;
+  &.grid a.grid, 
+  &.timeline a.timeline {
+    color: $firefly80;
   }
 }
