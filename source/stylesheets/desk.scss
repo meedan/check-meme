@@ -63,15 +63,6 @@ body {
   }
 }
 
-// Reports list
-// 
-.reports {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  width: 100%;
-  margin: 0 auto;
-}
 
 // Layout themes
 // 
@@ -84,9 +75,11 @@ body.project {
   .sidebar {
     flex: 1 auto;
     background: white;
-    height: 100vh;
     padding: 1em;
     border-right: 1px solid $firefly40;
+    @media all and (max-width: 700px) {
+      display: none;
+    }
     .branding {
       margin-top: 15px;
     }
@@ -96,6 +89,16 @@ body.project {
   }
 }
 
+// Reports list
+// 
+.reports {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
 
 // Color themes
 %dark-theme {

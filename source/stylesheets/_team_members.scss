@@ -2,16 +2,12 @@
 // 
 .project--team {
   display: flex;
-  border: 1px solid aqua;
   @media all and (max-width: 800px) {
     flex-flow: column nowrap;
     flex-direction: column-reverse;
   }
   &>.headers {
     margin-right: 1em;
-    @media all and (max-width: 800px) {
-      border: 1px solid red;
-    }
     h4 {
       font-size: 12px;
       padding: 0;
@@ -30,7 +26,6 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
-    border: 1px solid green;
 
     img {
       padding: 0;
