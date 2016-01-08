@@ -24,4 +24,6 @@ $(document).ready(function() {
        $(this).delay((i + 1) * 80).fadeIn();
     });
   });
+
+  
 });

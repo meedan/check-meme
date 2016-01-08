@@ -14,5 +14,6 @@
 // Checkdesk prototyping
 // 
 //= require "helpers/queries"
+//= require "helpers/modal"
 //= require "reports"
 //= require "desk"

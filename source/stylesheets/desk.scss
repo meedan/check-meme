@@ -5,6 +5,7 @@
 @import "stylesheet_switcher";
 @import "team_members";
 @import "report";
+@import "modal";
 
 // Global declarations
 // 
@@ -42,8 +43,7 @@ body {
   align-items: center;
   max-width: 100%;
   overflow: hidden;
-  border-bottom: 1px solid $firefly40;
-  margin-bottom: 4em;
+  border-bottom: 1px solid $firefly30;
 
   // Extra wrapper for flex
   &>.headers {
@@ -55,20 +55,19 @@ body {
       margin-bottom: 0;
     }  
     h3 {
-      font-size: 0.8em;
+      font-size: 14px;
+      font-weight: normal;
       padding: 0;
       margin: 0;
-      color: $firefly20;
+      color: $firefly30;
     }
   }
 }
-
 
 // Layout themes
 // 
 @import "desk-grid";
 @import "desk-timeline";
-
 
 body.project {
   display: flex;
@@ -76,7 +75,8 @@ body.project {
     flex: 1 auto;
     background: white;
     padding: 1em;
-    border-right: 1px solid $firefly40;
+    border-right: 1px solid $firefly30;
+    min-height: 100vh;
     @media all and (max-width: 700px) {
       display: none;
     }
@@ -111,7 +111,7 @@ body.project {
 %light-theme {
   background-color: $thatch5-warm;
   .report {
-    box-shadow: 0 2px 3px $firefly20;
+    box-shadow: 0 0px 3px $firefly20;
   }
 }
 

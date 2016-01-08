@@ -1,3 +1,5 @@
+// The grid theme for the desk
+//
 body.grid {  
   .reports {
     display: flex;
@@ -11,7 +13,7 @@ body.grid {
     margin: 1em;
   }
 
-  .checklog {
+  .report--checklog {
     display: none;
     ul {
       padding-left: 5px;

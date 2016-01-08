@@ -1,0 +1,38 @@
+* {
+  margin:0; 
+  padding:0;
+}
+
+#overlay {
+  position:fixed; 
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.5;
+  filter:alpha(opacity=50);
+}
+
+#modal {
+  position:absolute;
+  background: $dodger-blue;
+  padding:8px;
+}
+
+#content {
+  border-radius:8px;
+  background:#fff;
+  padding:20px;
+}
+
+#close {
+  position:absolute;
+  background:url(close.png) 0 0 no-repeat;
+  width:24px;
+  height:27px;
+  display:block;
+  text-indent:-9999px;
+  top:-7px;
+  right:-7px;
+}

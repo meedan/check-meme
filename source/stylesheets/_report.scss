@@ -1,66 +1,67 @@
-// A Report: Default view (expanded)
+// A Report: base styles
 // 
+// The report is themed by different views of the desk. 
+// 
+// See: desk-grid and desk-timeline.
+// 
+// 
+
+// Base report has a white background
 .report {
   background-color: white;
   border-radius: 5px;
-  color: $firefly80;
-  // width: 500px;
+  color: $firefly60;
   margin: 4em auto;
   overflow: hidden;
+  // is hidden until revealed by js.
   display: none;
-
   
+  // Equal side padding on all immediate children
   & > * {
-    padding: 0 0.5em;
+    padding: 0 10px;
   }
 
+  .report--contextual-action-menu {
+    color: $firefly50;
+    font-size: 22px;
+  }
   // The media object core
   // 
-  .media-object {
-    padding: 0;
+  // By default it's full size.
+  // 
+  .report--media-object {
     img {
       width: 100%;
       max-width: 100%;
     }
   }
 
-  // The title of the media object
-  // 
-  .title {
-    // font-size: 1.4em;
-  }
-
   // The status on a report
   // 
-  .verification-status {
+  .report--verification-status {
     color: $firefly60;
     padding: 0.5em 1em!important;
     &:hover {
       cursor: pointer;
     }
-    &.progress {
-      // border-top: 2px solid $soft-yellow;
-    }
     &.false {
-      // border-top: 2px solid $false-red;
-      // color: white;
+      color: $false-red;
     }
     &.verified {
-      // color: white;
-      // border-top: 2px solid $verified-green;
+      color: $verified-green;
     }
   } 
 
   // The upstream origin URL
   // 
-  .source-username {
+  .report--source-username {
    color: $firefly60;
   }
 
-  // Which user added the report
+  // Added-by whom
   // 
-  .added-by {
-    padding: 0.5em 1em!important;
+  .report--added-by {
+    // padding: 0.5em 1em!important;
     .source-domain {
       color: $firefly;
       padding: 0.5em 0;
@@ -88,7 +89,7 @@
 
   // The checklog
   // 
-  .checklog {
+  .report--checklog {
     background-color: $firefly50;
     padding: 1em;
     font-size: smaller;
@@ -191,14 +192,14 @@
     padding: 0.2em 1em;
   }
 
-  .title {
+  .report--title {
     font-size: 12px;
     .fa {
       color: $firefly40;
     }
   }
 
-  .description {
+  .report--description {
     display: none;
   }
 
@@ -213,7 +214,7 @@
     padding: 0 1em;
   }
 
-  .checklog {
+  .report--checklog {
     // Toggled with js
     display: none;
   }

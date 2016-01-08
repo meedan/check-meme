@@ -27,7 +27,7 @@ body.timeline {
   // At larger sizes, do a 2-col timeline treatment
   // 
   @media all and (min-width: 700px) {
-    .added-by {
+    .report--added-by {
       position: absolute;
       z-index: 2;
       left: -11px;

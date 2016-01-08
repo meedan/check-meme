@@ -1,29 +1,32 @@
 <% data.reports.each do |r| %>
   <div class="js-queries report <%= r.type %> <%= r.archive_status %>">
-
+  
+  <div class="report--contextual-action-menu">
+    <a href="#"><i class="fa fa-ellipsis-h"></i></a>
+  </div>
     <!-- Media object -->
-    <div class="media-object">
+    <div class="report--media-object">
       <img src="/images/prototype/<%=r.media_object%>">
     </div>
 
     <!-- Title -->
-    <div class="title">
+    <div class="report--title">
       <i class="fa fa-<%= r.source_type_icon %>"></i>
       <%= r.title %>
     </div>
 
     <!-- Description -->
-    <div class="description">
+    <div class="report--description">
       <%= r.description %>
     </div>
 
     <!-- Source: Often A username, or channel name -->
-    <div class="source-username">
+    <div class="report--source-username">
       <%= r.source_username %>
     </div>
 
     <!-- Source domain: eg youtube -->
-    <div class="added-by">
+    <div class="report--added-by">
       <span class="source-domain">
         <i class="fa fa-<%= r.source_domain_icon %>"></i>
       </span>
@@ -31,7 +34,7 @@
       <span class="username"><%= r.added_by %></span>
     </div>
 
-    <div class="checklog">
+    <div class="report--checklog">
       <div class="checklog--header">
         <h4><%= r.checklog.count %> Verification notes</h4>
         <div class="checklog--actions">
@@ -72,7 +75,7 @@
     </div>
 
     <!-- Verification status: eg, false -->
-    <div class="verification-status js-show-report <%= r.verification_status %>">
+    <div class="report--verification-status js-show-report <%= r.verification_status %>">
       <%= r.verification_status %> <span class="attribution-team">by Bellingcat</span>
     </div>
   </div>
