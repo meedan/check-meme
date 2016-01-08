@@ -5,21 +5,26 @@
 .project-header {
   background-color: white;
   padding: 2em;
-  font-size: 14px!important;
+  font-size: 14px;
   display: flex;
   max-width: 100%;
   overflow: hidden;
+  border-bottom: 1px solid $firefly40;
 }
-
 
 // Stylesheet switcher
 // 
 .view-toggle {
   width: 500px;
+  margin: 0 auto;
+  border-bottom: 1px solid $firefly20;
+  font-size: 14px!important;
   ul {
+    padding: 0;
     list-style-type: none;
     width: 100%;
     display: flex;
+    justify-content: center;
     li {
       margin: 0 1em;
     }
@@ -85,6 +90,7 @@
   flex-flow: column nowrap;
   align-items: flex-start;
   width: 100%;
+  margin: 0 auto;
 }
 
 // A Report: Default view (expanded)
@@ -322,6 +328,21 @@ body.condensed {
 }
 
 body.project {
-  // @extend %light-theme;
-  @extend %dark-theme;
+  @extend %light-theme;
+  // @extend %dark-theme;
+}
+
+
+body.project {
+  display: flex;
+  .sidebar {
+    flex: 1 auto;
+    background: white;
+    height: 100vh;
+    padding: 1em;
+    border-right: 1px solid $firefly40;
+  }
+  .main {
+    flex: 23 auto;
+  }
 }

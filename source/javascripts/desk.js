@@ -25,7 +25,7 @@ $(document).ready(function() {
   $('.report').hide();
   $(window).load(function() {
     $(".report").each(function(i) {
-       $(this).delay((i + 1) * 50).fadeIn();
+       $(this).delay((i + 1) * 80).fadeIn();
     });
   });
 

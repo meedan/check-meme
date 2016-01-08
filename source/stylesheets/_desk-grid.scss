@@ -6,7 +6,8 @@ body.grid {
   .reports {
     display: flex;
     flex-flow: wrap row;
-    align-items: flex-start;
+    justify-content: center;
+    align-content: middle;
   }
   .report.report {
     width: 180px;

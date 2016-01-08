@@ -4,6 +4,11 @@ body.timeline {
   @extend .condensed;
 
   .reports {
+    &:before {
+      content: "Eliot started project: Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos";
+      padding: 1em 4em;
+    }
+    padding-top: 2em;
     border-left: 1px solid $firefly20;
     width: 410px;
     margin: 0 auto;
