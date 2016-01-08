@@ -4,11 +4,12 @@
   background-color: white;
   border-radius: 5px;
   color: $firefly80;
-  width: 500px;
-  margin: 2em auto;
+  // width: 500px;
+  margin: 4em auto;
   overflow: hidden;
   display: none;
 
+  
   & > * {
     padding: 0 0.5em;
   }
@@ -32,29 +33,28 @@
   // The status on a report
   // 
   .verification-status {
-    color: rgba(black,0.7);
-    text-transform: capitalize;
+    color: $firefly60;
     padding: 0.5em 1em!important;
     &:hover {
       cursor: pointer;
     }
     &.progress {
-      background-color: $soft-yellow;
+      // border-top: 2px solid $soft-yellow;
     }
     &.false {
-      background-color: $false-red;
-      color: white;
+      // border-top: 2px solid $false-red;
+      // color: white;
     }
     &.verified {
-      color: white;
-      background-color: $verified-green;
+      // color: white;
+      // border-top: 2px solid $verified-green;
     }
   } 
 
   // The upstream origin URL
   // 
   .source-username {
-   color: $dodger-blue;
+   color: $firefly60;
   }
 
   // Which user added the report
@@ -70,6 +70,9 @@
       }
       .fa-facebook-official {
         color: $facebook-blue;
+      }
+      .fa-twitter {
+        color: $twitter-blue;
       }
     }
     .datestamp { 

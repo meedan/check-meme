@@ -11,7 +11,7 @@ layout: desk
 </div>
 
 <div class="main">
-  <div class="project-header">
+  <div class="project--header">
     <div class="headers">
       <h2>Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos</h2>
       <h3>Started by Eliot Higgins 15 days ago</h3>
@@ -23,6 +23,7 @@ layout: desk
         <h3>Eliot, Hak, Maxim + 7</h3>
         <h4><a href="#">Join our project</a></h4>
       </div>
+
       <div class="members">
         <div class="member"><img src="/images/prototype/eliot.png"></div>
         <div class="member"><img src="/images/prototype/hak.png"></div>
@@ -35,13 +36,10 @@ layout: desk
     </div>
   </div>
 
-  <div class="stylesheet-switcher">
-    <ul>
-      <li class="js-view-class"><a class="default" href="/prototype/desk/bellingcat"><i class="fa fa-picture-o"></i>Expanded</a></li>
-      <li class="js-view-class"><a class="timeline" href="/prototype/desk/bellingcat?view=timeline"><i class="fa fa-list-ul"></i>Timeline</a></li>
-      <li class="js-view-class"><a class="grid" href="/prototype/desk/bellingcat?view=grid"><i class="fa fa-th"></i>Grid</a></li>
-    </ul>
-  </div>
+  <ul class="project--stylesheet-switcher js-view-class">
+    <li><a class="timeline" href="/prototype/desk/bellingcat?view=timeline"><i class="fa fa-list-ul"></i>Timeline</a></li>
+    <li><a class="grid" href="/prototype/desk/bellingcat?view=grid"><i class="fa fa-th"></i>Grid</a></li>
+  </ul>
 
   <div class="reports">
     <%= partial "partials/reports" %>

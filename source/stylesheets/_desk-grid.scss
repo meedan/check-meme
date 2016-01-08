@@ -1,5 +1,4 @@
-body.grid {
-  @extend %condensed;
+body.grid {  
   .reports {
     display: flex;
     flex-flow: wrap row;
@@ -7,7 +6,8 @@ body.grid {
     align-content: middle;
   }
   .report.report {
-    width: 180px;
+    @extend %condensed;
+    width: 280px;
     margin: 1em;
   }
 

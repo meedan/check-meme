@@ -1,32 +1,30 @@
 // Stylesheet switcher
 // 
-.stylesheet-switcher {
-  width: 100%;
-  margin: 0 auto;
+  
+ul.project--stylesheet-switcher {
   border-bottom: 1px solid $firefly20;
+  display: flex;
   font-size: 14px!important;
-  ul {
-    padding: 0;
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    li {
-      margin: 0 1em;
-    }
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1em;
+  li {
+    margin: 0 1em;
   }
   i {
     padding: 0.5em;
   }
+
   a {
     text-decoration: none;
+    color: $firefly40;
   }
 
-  li.default a.default, 
-  li.condensed a.condensed, 
   li.grid a.grid, 
   li.timeline a.timeline {
-    font-weight: bold;
     color: $dodger-blue;
   }
 }
+
