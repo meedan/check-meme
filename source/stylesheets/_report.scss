@@ -61,7 +61,7 @@
   // 
   .added-by {
     padding: 0.5em 1em!important;
-    .source-domain { 
+    .source-domain {
       color: $firefly;
       padding: 0.5em 0;
       border-radius: 4px;
@@ -175,5 +175,43 @@
         }
       }
     }
+  }
+}
+
+%condensed {
+  font-size: 12px;
+  margin: 1em auto;
+  width: 680px;
+  padding: 0.6em 0em 0em;
+  
+  & > * {
+    padding: 0.2em 1em;
+  }
+
+  .title {
+    font-size: 12px;
+    .fa {
+      color: $firefly40;
+    }
+  }
+
+  .description {
+    display: none;
+  }
+
+  img {
+    max-width: 50px;
+    border-radius: 3px;
+    float: right;
+  }
+
+  p {
+    margin: 0!important;
+    padding: 0 1em;
+  }
+
+  .checklog {
+    // Toggled with js
+    display: none;
   }
 }

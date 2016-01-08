@@ -1,5 +1,5 @@
 body.grid {
-  @extend .condensed;
+  @extend %condensed;
   .reports {
     display: flex;
     flex-flow: wrap row;

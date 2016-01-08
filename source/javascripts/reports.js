@@ -7,4 +7,12 @@ $(document).ready(function() {
     $(this).prev().slideToggle();
     e.preventDefault();
   });
+
+  // Toggle the input in the checklog
+  // 
+  $('.report form').hide();
+  $('.js-toggle-input').click(function(e) {
+    $(this).closest('.report--form').find('form').slideToggle();
+    e.preventDefault();
+  });
 });

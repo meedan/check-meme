@@ -24,9 +24,15 @@ body {
   color: $firefly60;
   background-color: $thatch5-warm;
   padding: 0em;
+  a {
+    color: $dodger-blue;
+    &:visited {
+      color: $dodger-blue;
+    }
+  }
 }
 
-// Header
+// Main Project Header
 // 
 .project-header {
   background-color: white;
@@ -38,11 +44,22 @@ body {
   overflow: hidden;
   border-bottom: 1px solid $firefly40;
   margin-bottom: 4em;
-  h2 {
-    width: 40%;
-    margin-right: 1em;
-    padding-right: 1em;
-    font-size: 14px;
+
+  // Extra wrapper for flex
+  &>.headers {
+    width: 50%;
+    h2 {
+      margin-right: 1em;
+      padding-right: 1em;
+      font-size: 14px;
+      margin-bottom: 0;
+    }  
+    h3 {
+      font-size: 0.8em;
+      padding: 0;
+      margin: 0;
+      color: $firefly20;
+    }
   }
 }
 
@@ -54,47 +71,6 @@ body {
   align-items: flex-start;
   width: 100%;
   margin: 0 auto;
-}
-
-// Project with a "condensed" theme
-// 
-// This is a base for other themes
-// 
-body.condensed {
-  font-size: 12px;
-  .reports {
-    .report {
-      margin: 1em auto;
-      width: 680px;
-      padding: 0.6em 0em 0em;
-      & > * {
-        padding: 0.2em 1em;
-      }
-
-      .title {
-        font-size: 12px;
-        .fa {
-          color: $firefly40;
-        }
-      }
-      .description {
-        display: none;
-      }
-      img {
-        max-width: 50px;
-        border-radius: 3px;
-        float: right;
-      }
-      p {
-        margin: 0!important;
-        padding: 0 1em;
-      }
-      .checklog {
-        // Toggled with js
-        display: none;
-      }
-    }
-  }
 }
 
 // Layout themes
@@ -124,7 +100,7 @@ body.project {
 // Color themes
 %dark-theme {
   background: $firefly80;
-  .view-toggle a {
+  .stylesheet-switcher a {
     color: white;
   }
 }

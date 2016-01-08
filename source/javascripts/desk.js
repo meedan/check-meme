@@ -15,10 +15,6 @@ $(document).ready(function() {
   // Tell the stylesheet switcher which view is active
   // 
   $('.js-view-class').addClass(queries.view);
-  
-  $('view-toggle a').click(function(){
-    alert($('this').class);
-  });
 
   // Staggered fade in: reports
   // 
@@ -28,5 +24,4 @@ $(document).ready(function() {
        $(this).delay((i + 1) * 80).fadeIn();
     });
   });
-
 });

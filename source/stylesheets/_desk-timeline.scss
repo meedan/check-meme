@@ -1,7 +1,6 @@
 // Project with a "timeline" theme
 // 
 body.timeline {
-  @extend .condensed;
 
   .reports {
     &:before {
@@ -15,7 +14,8 @@ body.timeline {
     position: relative;
   }
 
-  .report.report.report {
+  .report.report {
+    @extend %condensed;
     width: 400px;
     margin-top: 2em;
     margin-left: 53px;

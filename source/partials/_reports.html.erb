@@ -1,5 +1,5 @@
 <% data.reports.each do |r| %>
-  <div class="report <%= r.type %> <%= r.archive_status %>">
+  <div class="js-queries report <%= r.type %> <%= r.archive_status %>">
 
     <!-- Media object -->
     <div class="media-object">
@@ -60,7 +60,7 @@
         </div>
         <div class="checklog--entry-body">
           <div class="report--form">
-            <p class="helper-text"><span class="username">You</span> Add a comment or link</p>
+            <p class="helper-text"><span class="username">You</span> <a href="#" class="js-toggle-input">Add a comment or link</a></p>
             <form>
               <input type="text"></input>
               <input type="submit"></input>
