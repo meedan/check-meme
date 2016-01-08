@@ -56,4 +56,12 @@ body.timeline {
       width: 100px;
     }
   }
+  
+  .report--form form {
+    padding: 0;
+    width: 250px;
+    @extend %colors--form-default;
+    display: flex;
+    margin: 0;
+  }
 }

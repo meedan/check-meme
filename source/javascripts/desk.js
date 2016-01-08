@@ -29,12 +29,4 @@ $(document).ready(function() {
     });
   });
 
-  // Staggered fade in: team members
-  // 
-  $('.project--team .member').hide();
-  $(window).load(function() {
-    $(".member").each(function(i) {
-       $(this).delay((i + 1) * 100).fadeIn();
-    });
-  });
 });
