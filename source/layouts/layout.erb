@@ -1,20 +1,19 @@
 <!doctype html>
 <html>
   <head>
-    <%= partial "partials/head" %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag "desk", {media: false} %>
+    <meta name="description" content="<%= current_page.data.description %>" />
   </head>
-  <body class="<%= page_classes %>">
-    <h1>Meme Buster: Antiviral Meme Generator</h1>
-    <div class="m-meme">
-      <%= partial "partials/editor" %>
-      <%= partial "partials/canvas" %>
-    </div>
-
-    <footer class="meta">
-      <h4 class="credit--primary">A <a href="http://checkdesk.org">Checkdesk</a> experiment.</h4>
-      <h4 class="credit--secondary">Based on <a href="https://github.com/voxmedia/meme">Meme</a> by Vox Media.</h4>
-      <h4 class="feedback"><a href="https://docs.google.com/a/meedan.com/forms/d/1wJn6iodjKaIY-4DxbVsoO_saLfFRB_And2RxHm5-eYc/edit?uiv=1">I wish this page would ...</a></h4>
-    </footer>
+  
+  <body class="">
+  
+    <h2> This is the default layout.</h2>
+    <%= yield %>
     
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'settings' %>

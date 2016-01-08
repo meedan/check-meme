@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "partials/head" %>
+  </head>
+  <body class="<%= page_classes %>">
+    <h1>Meme Buster: Antiviral Meme Generator</h1>
+    <div class="m-meme">
+      <%= partial "partials/editor" %>
+      <%= partial "partials/canvas" %>
+    </div>
+
+    <footer class="meta">
+      <h4 class="credit--primary">A <a href="http://checkdesk.org">Checkdesk</a> experiment.</h4>
+      <h4 class="credit--secondary">Based on <a href="https://github.com/voxmedia/meme">Meme</a> by Vox Media.</h4>
+      <h4 class="feedback"><a href="https://docs.google.com/a/meedan.com/forms/d/1wJn6iodjKaIY-4DxbVsoO_saLfFRB_And2RxHm5-eYc/edit?uiv=1">I wish this page would ...</a></h4>
+    </footer>
+    
+    <%= javascript_include_tag 'settings' %>
+    <%= javascript_include_tag 'application' %>
+  </body>
+</html>

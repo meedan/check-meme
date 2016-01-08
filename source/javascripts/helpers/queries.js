@@ -8,4 +8,10 @@ $.each(document.location.search.substr(1).split('&'),function(c,q){
   if (i[1]) {
     queries[i[0].toString()] = i[1].toString();  
   }
+
+  // If there aren't, make sure to set a default view
+  // 
+  if (typeof queries.view == "undefined") {
+    queries.view = "timeline";
+  }
 });
