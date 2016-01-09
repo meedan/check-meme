@@ -1,33 +1,17 @@
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css";
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
 @import "colors";
-@import "report_forms";
+@import "global";
 @import "stylesheet-switcher";
 @import "team-members";
 @import "report";
+@import "report-forms";
 @import "modal";
 
-// Global declarations
+// Project themes
 // 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 16px;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-  font-family: Lato, helvetica, Arial, sans-serif;
-  color: $firefly60;
-  background-color: $thatch5-warm;
-  a {
-    color: $dodger-blue;
-    &:visited {
-      color: $dodger-blue;
-    }
-  }
-}
+@import "project-grid";
+@import "project-timeline";
 
 // Main Project Header
 // 
@@ -60,12 +44,7 @@ body {
   }
 }
 
-// Layout themes
-// 
-@import "desk-grid";
-@import "desk-timeline";
-
-body.project {
+.project {
   display: flex;
   .sidebar {
     flex: 1 auto;
