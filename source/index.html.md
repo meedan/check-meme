@@ -4,164 +4,178 @@ description: Collaborative verification projects
 layout: default
 ---
 
-<h2>Checkdesk prototypes active in early 2016. </h2>
+## Checkdesk prototypes active in early 2016.
 
 - [Meme Buster](/prototype/workspace) (workspace)
 - [Bellingcat project page](/prototype/project?view=timeline)
 - [Bellingcat report page](/prototype/report)
 
-<h2>Checkdesk 2013 Information Architecture</h2>
+<h2>Checkdesk 2016 Information Architecture (WIP)</h2>
 
-- LB — Liveblog
-  - LB:C — Liveblog configuration
-    - Branding
-    - Logo
-    - Tagline
-    - LB:C:SL — Footer Links
-    - LB:C:FCS — fact-checking statement
-    - LB:C:T — Terms of use
-    - LB:C:A — About 
-    - LB:C:AU — Administer Users
-  - LB:FCS — Fact-checking statement
-  - LB:T — Terms of Use Page
-  - LB:A — About Page
-- H — Homepage 
-  - H:SL — Story List
-  - H:NAV — Homepage Navigation
-  - H:CUX — Capstone UX
-  - H:T — Tour
-  - H:CTA — Homepage Call to Action
+### Intakes and outputs
 
-- S — Story
-  - S:E — Story elements
-    - Title
-    - Description
-    - Featured Reports
-    - Footer 
-  - … Story is extensible
-- U — Update
-  - U:E — Update elements
-    - Title
-    - Byline
-    - Reports
-    - Paragraphs of text
-    - Call to action
-    - Advertisments
-    - … update is extensible
-- RD — Report Detail Page
-- RE — Report Elements
-  - Title
-  - Description
-  - Caption
-  - Creator
-  - Via
-  - Owner
-  - Question
-  - Checklist
-  - Task
-  - …. Report is extensible
-- D — Dashboard Page
-  - D:CS — Dashboard Create Story 
-  - D:R — Dashboard Report (a report is on your desktop)
-  - D:RS — Dashboard Report Stream
-  - D:RS:F — Filters 
-  - D:E — Dashboard Elements
-  - D:Actions — Dashboard Actions
-  - D:P — Navigation Profile tooltip
-  - D:C — Compose 
-  - Update 
-  - Story 
-  - Report
-  - D:AN Analytics
-  - D:PE Profile Edit 
-  - D:IM Report Import
-  - D:EX Export
-  - D:Profile
-- .. Dashboard is extensible
-- PRO — Public Profile
-- SIG — Sign in & Register
-- MSG — Messages
-  + MSG:CON Confirmation Message
-  + MSG:ERR Error Messages
-- BM — Bookmarklet
-  + IBM Install Bookmarklet
-- N — Notifications
-- + NS — Notification Settings
-- AB — About 
-- LB — Liveblog
-- L — Layout
-- L:F — Footer Layout
-- L:S — Sidebar Layout
-- L:H — Header Layout
-- L:M — Modal Layout
+- IN Intake
+  + IN:B Bots
+    - I:B:BL Bot list
+    - I:B:BC Bot config
+    - I:B:N Bot name
+    - I:B:S Bot scripts
+  + IN:E Browser extension
+    - IN:E:I Install Extension
+    - IN:E:A Add Report (The UI that appears when invoked)
+      + preview/edit title
+      + preview/edit description
+      + set verification status
+      + add todo 
+      + start a todo
 
-<h3>2015 Addition Suggestions (partial list):</h3>
+- OUT Output
+  + OUT:Static
+    - png or jpg static outputs (FB, Twitter, Instagram sizes)
+  + OUT:Embed
+    - Project
+    - Report
 
-    - The checklog is more like a chat
-    - The story is a "project"
-    - There are bots that help but are not required in the core workflow
-    - The profile appears primarily in a popover
-    - "Workbench" seems anacronistic — let's consider them _workspaces_.
-    - A workspace takes as input a media object from which it can infer metadata like title, description, colors ... This allows us to skip basic configuration steps sometimes.
-    - There are buttons that invoke workspaces
-        - Workspaces create artifacts 
-            - Artifacts (usually images) that can be used to promote a verification campaign or retract specific claims, multimedia or rumors.
-            - Workspaces are intended as evidence 
-            - against media already in circulation.
+### A Checkdesk instance 
 
-<h3>More 2016 Considerations:</h3>
+- I Instance
+  + I:B Cover Image (Optional)
+  + I:L Logo (Optional) 
+  + I:T Tagline 
+  + I:L Links (these point eg to your blogs)
+  + I:T Terms of use (Optional) 
+  + I:A About (Optional) 
+  + I:T Team (one per instance)
+    - I:T:L List of people
+    - I:T:A Add people
+    - I:T:R Remove people
+  + I:TE Terms of Use Page (click to edit)
+  
+  + I:H Instance Homepage
+    - I:H:I Homepage Instance Metadata (Everything in I is editable)
+    - I:H:PL Homepage Projects List
+    - I:H:NAV Homepage Navigation
+    - I:H:CUX Homepage Capstone UX (Graphical overview)
+    - I:H:CAB Homepage contextual action buttons
+      - Report Import 
+      - Export Data (one click all data is downloaded)
+      - Delete this instance
+      - Create Project
+    - I:H:RS Desk Report Stream
+    - I:H:RS:F Filters 
+    - I:H:AN Analytics
+    - I:H:PE Profile Edit
 
-    Work with Eliot's report; make something that we think Eliot would like. Our primary working question is: How the bellingcat team do their work — based on the data we have about what they did?
+### Checkdesk project
 
-        We can see that they did many examples of "promotional images" which served to supplement the main research as figures. These are usually: 
+  + I:P Project (Was: "Story")
+    - I:P:CP Create Project
+    - I:P:T Project Title
+    - I:P:D Project Description (tweet length)
+    - I:P:TM Project tag manager (List tags and edit in batch, prune and merge tags)
+    - I:P:D Project Pinned Report
+    - I:P:C Project Configuration (eg Privacy settings)
+    - I:P:TE Project team
+    - I:P:AL Project activity log
+    - I:P:AR Project Add Report (same as browser extension)
+      + Add a link, it becomes a report with contextual action buttons and suggested tasks
+    - I:P:A Project Actions (invoke workspaces)
+      + A/B Test workspace — as designed by ARK
+      + Geolocation workspace — as designed by ARK
+      + Doodle space — draw shapes with text by ARK
+      + Note space — type some text notes and add images
+      + Reverse image search workspace — utilize Tineye and related tools
+  
+### Checkdesk Report
+  
+  + I:R Report
+    - I:R:MO Report Media Object
+    - I:R:TR Report Translation
+      + Language
+      + Text 
+      + Attribution
+    - I:R:CAB Report Contextual Action Buttons
+      + Pin to top of project
+      + Privacy settings (Public, private, obscure)
+      + Set view: Small, medium, large
+      + Set image: If the image you want to search is not obvious, the user can choose to search all (large) images in the page 
+      + Set status
+        - False
+        - Verified
+        - In progress
+        - Not verifiable (Questionable but very difficult to check)
+        - Not applicable (Not questionable, supplemental info)
+    - I:R:TA Report Tags
+      + Tag list
+        - Remove tag
+      + Add another tag
+      + Manage tags (to Project Tag Manager)
+    - I:R:TY Report Type (eg Video)
+    - I:R:V Via Names (eg anyone who helped find it)
+    - I:R:UP Uploader (eg Account that owns it)
+    - I:R:CR Creator (eg Who filmed it)
+    - I:R:VS Verification Status (eg False)
+    - I:R:AS Archive Status (ie if it was deleted)
+    - I:R:TI Title of the report
+    - I:R:DE Description of the report
+    - I:R:L Locations referenced in the report
+    - I:R:CLOG Checklog
+      + I:R:CLOG:PE Primary Checklog Entry
+        - Attribution
+        - Verb
+        - Date-timestamp
+        - Comment (optional)
+      + I:R:CLOG:SE Secondary Checklog Entry
+        - Attribution
+        - Verb
+      + I:R:CLOG:P Pinned Entry (Sticks to top and appears in teasers)
+      + I:R:TR Translated Entry (TBD)
+    - I:R:CLIST Checklist
+      + I:R:CL:ST Checklist Suggested Tasks
+      + I:R:CL:TA Checklist Task
+        - State: unstarted, started, completed, or removed
+        - Task
+        - Attribution
+    - I:R:DP Report Detail Page  
+      + (Edit any report attribute)
+  
+### Workspaces
+  
+  + I:WS Workspaces
+    - I:WS:N Name
+    - I:WS:D Description
+    - I:WS:H Help
+    - I:WS:UI User Interface
+    - I:WS:IN Inputs (eg image, video, quote)
+    - I:WS:OUT Outputs (usually image or image text)
 
-            - Custom crops of photos, eg of tanks in the street
-            - Side by side comparison of photos with annotations
-            - Custom crops of maps with annotations
-            - Captions
+### Search 
 
-            Figures with figcaptions seems to be a natural way to think about these types of ouputs from workspaces. The static image output case is enough to support many different types of uses.
+  + I:Search
+    - Results (with filter and sort)
+    - Facets (Reports, Projects, People)
 
-            We can also imagine dynamic outputs with custom behaviors like: 
+### Profiles, Auth, &amp; Notifications
 
-                hover 
-                click
-                drag
-                swipe
-                force touch
+  + I:PRO 
+    - I:PRO:M My Profile (when authenticated, else same as Your Profile)
+      + popover (on hover)
+      + full page 
+    - I:PRO:Y Your Profile
+      + popover (on hover)
+      + full page
+
+  + I:SIG Sign in & Register
+    - Sign in
+    - Register
+    - Forgot Password
+  
+  + I:N Notifications
+    - I:N:NL Notification list
+    - I:N:NS Notification Settings
 
 
-    In CD2 terms this is the Report Detail page and the Report Detail Edit page (it never made much sense to separate them.)
 
-    Specific enhancements to the existing Report log in CD2016: 
 
-    - Hyperlinks are automatically expanded. 
-    - geolocation 
 
-    - membuster experiment proves the need for flexible "watermarking" and "stamping"
-    - The memebuster is an interation in the graphics workspace. So, it would be general purposed as the "graphics workspace".
-        - Would other workspaces not need to use the graphics workspace? A workbench can be invoked on any media object! We can infer inputs used to populate the required parts of the graphics workspace: 
-                    - The background image could be taken from the largest photo
-                        - the photo used could be disambiguated with "Choose another background image CTA"
-                    - Parent link relationship could populate the credit area
-                    - The authors could be listed
-    - The unique aspect of the memebuster experiment was the "stickers" which come in "sticker packs."
-    - Analytics integration: sparklines for basic traffic
 
-    PROJECT PAGE BATCH OPERATIONS
-
-    - Add many links at once 
-        - In the browser extension, if you have many tabs open, you can add them all to a project at once.
-        - In a project page you can add multiple links at a time and use the same project tag to all of them.
-    - Edit many links at once — you can check the links and edit all their metadata at once in the sidebar. If there are multiple values for a given field, "[Multiple values]" appears
-
-    CHECK LOG BATCH OPERATIONS
-
-    - Select many objects in the log
-        create a permalink of that manual selection
-        add it to a shareable batch image 
-        or multimedia slideshow
-
-    TEAM BATCH OPERATIONS
-
-    - In the team section of a project page or a link page, each team member is a media object — this means that, like the objects in the log, they  can be represented in an embeddable card in the same batch operation style that generates the embeds and cards from the log.

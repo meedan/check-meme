@@ -1,4 +1,5 @@
 [{
+  "id": "1",
   "media_object": "820.png",
   "helper_text": "This is an example of a Checkdesk <em>report</em>. You can add your own reports by creating a checkdesk account.",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/820",
@@ -23,6 +24,7 @@
     }]
   },
   {
+  "id": "2",
   "media_object": "979.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/979",
   "type": "map",
@@ -46,6 +48,7 @@
     }]
   },
   {
+  "id": "3",
   "media_object": "835.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/835",
   "type": "video",
@@ -70,6 +73,7 @@
   },
 
   {
+  "id": "4",
   "media_object": "836.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/836",
   "type": "video",
@@ -94,6 +98,7 @@
   },
 
   {
+  "id": "5",
   "media_object": "997.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/997",
   "type": "video",
@@ -137,6 +142,7 @@
     ]
   },
   {
+  "id": "6",
   "media_object": "998.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/998",
   "type": "video",
@@ -180,6 +186,7 @@
     ]
   },
   {
+  "id": "7",
   "media_object": "1011.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/1011",
   "type": "video",
@@ -223,6 +230,7 @@
     ]
   },
   {
+  "id": "8",
   "media_object": "1013.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/1013",
   "type": "video",
@@ -280,6 +288,7 @@
     }]
   },
   {
+  "id": "9",
   "media_object": "1018.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/1018",
   "type": "tweet",
@@ -319,6 +328,7 @@
     }]
   },
   {
+  "id": "10",
   "media_object": "977.png",
   "origin_url": "https://bellingcat.checkdesk.org/en/report/977",
   "type": "twimg",
@@ -328,7 +338,7 @@
   "description": "Presumed Turkish radar screengrab",
   "source_type_icon": "image",
   "source_domain_icon": "image",
-  "source_username": "surpher",
+  "source_username": "[no source username]",
   "added_datestamp": "Thu, December 10th 2015 at 5:23 PM PST",
   "added_by": "surpher",
   "checklog": [

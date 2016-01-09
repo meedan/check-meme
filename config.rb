@@ -32,3 +32,9 @@ configure :build do
   activate :minify_javascript
   activate :minify_css
 end
+
+# Proxy a dynamic page for each report
+# 
+data.reports.each do |report|
+  proxy "/prototype/report/#{report[:id]}", "prototype/report/index.html", :locals => { :report => report }
+end
