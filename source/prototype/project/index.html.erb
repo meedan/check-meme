@@ -3,48 +3,27 @@ title: Geolocation and Analysis of Ministry of Defence Airstrike Videos
 status: prototype 
 layout: default
 ---
-<div class="project">
-  <div class="sidebar">
-    <div class="branding">
-      <img src="/images/checkdesk-diamond-logo.png">
-    </div>
-  </div>
+<div class="page--project page js-view-class">
+  <%= partial "partials/sidebar" %>
 
   <div class="main">
-    <div class="project--header">
-      <div class="headers">
-        <h2>Geolocation and Analysis of Russian Ministry of Defence Syria Airstrike Videos</h2>
-        <h3>A media accountability project started by Eliot Higgins 15 days ago</h3>
-      </div>
-
-
-      <div class="project--team">
-        <div class="headers">
-          <h3>Eliot, Hak, Maxim + 7</h3>
-          <h4><a href="#">Join our project</a></h4>
-        </div>
-
-        <div class="members">
-          <div class="member"><img src="/images/prototype/eliot.png"></div>
-          <div class="member"><img src="/images/prototype/hak.png"></div>
-          <div class="member"><img src="/images/prototype/maxim.png"></div>
-          <div class="member"><img src="/images/prototype/samir.png"></div>
-          <div class="member"><img src="/images/prototype/sergey.png"></div>
-          <div class="member"><img src="/images/prototype/surpher.png"></div>
-          <div class="member"><img src="/images/prototype/vp.kivimaki_17.png"></div>
-        </div>
-      </div>
-    </div>
+    <%= partial "partials/header" %>
 
     <ul class="project--stylesheet-switcher js-view-class">
       <li><a class="timeline" href="/prototype/project?view=timeline"><i class="fa fa-list-ul"></i>Timeline</a></li>
       <li><a class="grid" href="/prototype/project?view=grid"><i class="fa fa-th"></i>Grid</a></li>
     </ul>
 
-    <div class="reports">
-      <%= partial "partials/reports" %>
-      <%= partial "partials/reports" %>
-    </div>
+    <div class="project--reports">
+      <!-- Loop through each report in 'data/reports' -->
+      <% data.reports.each do |report| %>
+        <%= partial "partials/report", :locals => { :report => report } %>
+      <% end %>
 
+      <!-- Loop a second time just to show more reports -->
+      <% data.reports.each do |report| %>
+        <%= partial "partials/report", :locals => { :report => report } %>
+      <% end %>
+    </div>
   </div>
 </div>

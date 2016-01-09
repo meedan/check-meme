@@ -8,11 +8,11 @@ $(document).ready(function() {
   // ... will create a class on the body element "table"
   // 
   
-  $('body').addClass(queries.view);
+  $('.page--project.js-view-class').addClass(queries.view);
 
   // Tell the stylesheet switcher which view is active
   // 
-  $('.js-view-class').addClass(queries.view);
+  $('.project--stylesheet-switcher.js-view-class').addClass(queries.view);
 
   // Staggered fade in: reports
   // 

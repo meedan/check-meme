@@ -15,5 +15,5 @@
 // 
 //= require "helpers/queries"
 //= require "helpers/modal"
-//= require "reports"
-//= require "desk"
+//= require "report"
+//= require "project"
