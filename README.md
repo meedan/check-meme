@@ -1,8 +1,6 @@
 # Meme Buster Prototype
 
-Checkdesk Meme Buster is Meedan's fork of the Vox "Meme v.2" project.
-
-We've customized the meme generator with special "verification stickers."
+Checkdesk Meme Buster is Meedan's fork of the Vox "Meme v.2" project. 
 
 ## Install
 
@@ -10,21 +8,21 @@ We've customized the meme generator with special "verification stickers."
 * `bundle install`
 * `bundle exec middleman`
 
-This will start a local web server running at: `http://localhost:4567/`
+This will start a local web server running at: `http://localhost:4567/`.
 
 ## Customization
 
-### Configuration
+See `source/javascripts/settings.js.erb` for configurable settings.
 
-Settings and controls are configured through `source/javascripts/settings.js.erb`. The [settings file](https://github.com/voxmedia/meme/blob/master/source/javascripts/settings.js.erb) has ample comments to document configuration.
+The [settings file](https://github.com/meedan/checkdesk-meme/blob/master/source/javascripts/settings.js.erb) has comments to document configuration.
 
 ### Fonts
 
-Include your own fonts in `stylesheets/_fonts.scss`, then add your font options into the [settings file](https://github.com/voxmedia/meme/blob/master/source/javascripts/settings.js.erb#L12).
+Include your own fonts in `stylesheets/_fonts.scss`, then add your font options into the [settings file](https://github.com/meedan/checkdesk-meme/blob/master/source/javascripts/settings.js.erb#L12).
 
 ### Editor theme
 
-Set the [theme-color variable](https://github.com/voxmedia/meme/blob/master/source/stylesheets/_vars.scss#L3) in `source/stylesheets/_vars.scss`. That one color will be tinted across all editor controls.
+Set the [theme-color variable](https://github.com/meedan/checkdesk-meme/blob/master/source/stylesheets/_vars.scss#L3) in `source/stylesheets/_vars.scss`. That one color will be tinted across all editor controls.
 
 ## Cross-Origin Resources (CORS)
 
@@ -38,6 +36,7 @@ If you're hosting this application on the same domain that serves your images, t
 
 ## Examples
 
+* https://memebuster.checkdesk.org
 * http://www.sbnation.com/a/meme
 * https://twitter.com/voxdotcom/status/481671889094340608
 * https://twitter.com/voxdotcom/status/479228288221470721
@@ -56,26 +55,3 @@ If you're hosting this application on the same domain that serves your images, t
 Contributors: Yuri Victor, Joshua Benton, Matt Montgomery, Ivar Vong, Steve Peters, Flip Stewart, Greg MacWilliam.
 
 Meme is a generator that Vox Media uses to create social sharing images. See working version at [http://www.sbnation.com/a/meme](http://www.sbnation.com/a/meme).
-
-## What's new in version 2.0?
-
-(I think this was the last sprint by Vox. — CGB 2015 Dec 15)
-
-* Refactored into a formal MV* app.
-* Fixed bugs with rendering state and repeat drag-n-drop images.
-* Improved initial rendering with loaded web fonts.
-* Improved cross-origin options: both for base64 images and CORS.
-* Highly (and easily!) customizable editor and theme options.
-* Watermark selector.
-
-## What's new in version 2.1?
-
-This was the start of the Checkdesk fork of the original Vox meme project. The Checkdesk project changed the stickers and the layout a bit  — CGB 2015 Dec 15)
-
-* Verification-oriented stickers
-* Simplified menu
-* Higher resolution output
-* Clearer information hierarchy and call to action
-* Clearer labeling and attribution
-* New feedback form
-* Typography and colors sync’d with Checkdesk
