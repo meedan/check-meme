@@ -1,7 +1,7 @@
 #!/bin/bash
 
-NAME=checkdesk-meme
-IMAGE=dreg.meedan.net/checkdesk/meme
+NAME=check-meme
+IMAGE=dreg.meedan.net/check/meme
 VERSION=local
 
 dir=$(pwd)

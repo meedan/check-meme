@@ -1,6 +1,6 @@
-# Meme Buster Prototype
+# Memebuster Prototype
 
-Checkdesk Meme Buster is Meedan's fork of the Vox "Meme v.2" project. 
+Memebuster is Meedan's fork of the Vox "Meme v.2" project. 
 
 ## Install
 
@@ -14,15 +14,15 @@ This will start a local web server running at: `http://localhost:4567/`.
 
 See `source/javascripts/settings.js.erb` for configurable settings.
 
-The [settings file](https://github.com/meedan/checkdesk-meme/blob/master/source/javascripts/settings.js.erb) has comments to document configuration.
+The [settings file](https://github.com/meedan/check-meme/blob/master/source/javascripts/settings.js.erb) has comments to document configuration.
 
 ### Fonts
 
-Include your own fonts in `stylesheets/_fonts.scss`, then add your font options into the [settings file](https://github.com/meedan/checkdesk-meme/blob/master/source/javascripts/settings.js.erb#L12).
+Include your own fonts in `stylesheets/_fonts.scss`, then add your font options into the [settings file](https://github.com/meedan/check-meme/blob/master/source/javascripts/settings.js.erb#L12).
 
 ### Editor theme
 
-Set the [theme-color variable](https://github.com/meedan/checkdesk-meme/blob/master/source/stylesheets/_vars.scss#L3) in `source/stylesheets/_vars.scss`. That one color will be tinted across all editor controls.
+Set the [theme-color variable](https://github.com/meedan/check-meme/blob/master/source/stylesheets/_vars.scss#L3) in `source/stylesheets/_vars.scss`. That one color will be tinted across all editor controls.
 
 ## Cross-Origin Resources (CORS)
 
@@ -36,7 +36,7 @@ If you're hosting this application on the same domain that serves your images, t
 
 ## Examples
 
-* https://memebuster.checkdesk.org
+* https://memebuster.checkmedia.org
 * http://www.sbnation.com/a/meme
 * https://twitter.com/voxdotcom/status/481671889094340608
 * https://twitter.com/voxdotcom/status/479228288221470721

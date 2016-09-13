@@ -1,4 +1,4 @@
-# checkdesk-meme
+# check-meme
 
 FROM dreg.meedan.net/meedan/ruby
 MAINTAINER sysops@meedan.com
@@ -6,10 +6,10 @@ MAINTAINER sysops@meedan.com
 #
 # SYSTEM CONFIG
 #
-ENV DEPLOYUSER checkdesk
-ENV DEPLOYDIR /var/www/checkdesk-meme
+ENV DEPLOYUSER check
+ENV DEPLOYDIR /var/www/check-meme
 ENV RAILS_ENV production
-ENV GITREPO https://github.com/meedan/checkdesk-meme
+ENV GITREPO https://github.com/meedan/check-meme
 
 #
 # APP CONFIG
@@ -17,9 +17,9 @@ ENV GITREPO https://github.com/meedan/checkdesk-meme
 
 RUN apt-get install -y nodejs 
 
-# nginx for checkdesk-meme
-COPY docker/nginx.conf /etc/nginx/sites-available/checkdesk-meme
-RUN ln -s /etc/nginx/sites-available/checkdesk-meme /etc/nginx/sites-enabled/checkdesk-meme
+# nginx for check-meme
+COPY docker/nginx.conf /etc/nginx/sites-available/check-meme
+RUN ln -s /etc/nginx/sites-available/check-meme /etc/nginx/sites-enabled/check-meme
 RUN rm /etc/nginx/sites-enabled/default && rm /etc/nginx/conf.d/passenger.conf
 
 #
@@ -53,7 +53,7 @@ USER root
 WORKDIR ${DEPLOYDIR}
 COPY ./ ./latest
 RUN chown -R ${DEPLOYUSER}:www-data ${DEPLOYDIR}
-RUN mv ./latest ./checkdesk-meme-$(date -I) && ln -s ./checkdesk-meme-$(date -I) ./current
+RUN mv ./latest ./check-meme-$(date -I) && ln -s ./check-meme-$(date -I) ./current
 
 #
 # RUNTIME ELEMENTS
