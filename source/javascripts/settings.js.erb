@@ -1,28 +1,28 @@
 // Read the query string to get the params from hubot
-// 
+//
 var queries = {};
 $.each(document.location.search.substr(1).split('&'),function(c,q){
   var i = q.split('=');
 
   // If there are queries, build an array
   if (i[1]) {
-    queries[i[0].toString()] = i[1].toString();  
+    queries[i[0].toString()] = i[1].toString();
   }
 });
 
-// Handle stamp syntax like this, 
+// Handle stamp syntax like this,
 // so users don't have to type the full image name or path.
-// 
+//
 //   http://memebuster.dev/?imageStamp=fake
-//   
+//
 if (queries.imageStamp) {
   var imageStampPath = "images/" + queries.imageStamp + ".png";
 }
 
 // Default settings
-// 
+//
 var MEME_SETTINGS = {
-  creditText: 'Checked by our team: http://example.checkdesk.org', // Default "credits" text.
+  creditText: 'Checked by our team: http://example.checkmedia.org', // Default "credits" text.
   creditSize: 20, // Font size for credit text.
   downloadName: 'Antiviral Meme', // The name of the downloaded image file (will have a ".png" extension added).
   fontColor: 'white', // Universal font color.
@@ -33,7 +33,7 @@ var MEME_SETTINGS = {
   // Font family options: set to empty array to disable font selector.
   // These options may also be formatted as {text:'Knockout', value:'"Knockout 28 B"'}.
   fontFamilyOpts: ['Arial', 'Futura', 'Helvetica Neue'],
-  
+
   // Font size of main headline:
   fontSize: 36,
   // Font size options: set to empty array to disable font-size selector.
@@ -55,12 +55,12 @@ var MEME_SETTINGS = {
   // Overlay color options: set to empty array to disable overlay options selector.
   overlayColorOpts: ['#10212f', '#000', '#FEC509', '#78FF62'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
-  
+
   // Text alignment: valid settings are "left", "center", and "right".
   textAlign: 'left',
   // Text alignment options: set to empty array to disable alignment picker.
   textAlignOpts: [
-    {text: 'Align left', value: 'left'}, 
+    {text: 'Align left', value: 'left'},
     {text: 'Align center', value: 'center'},
     {text: 'Align right', value: 'right'}
   ],
@@ -73,15 +73,15 @@ var MEME_SETTINGS = {
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("fake.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
   watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("warning@2x.png") %>',
-  
+
   // WIP — trying to set the watermark optionally from the querystring CGB 2015 Dec 15
-  // 
+  //
   // watermarkSrc: imageStampPath || (localStorage && localStorage.getItem('meme_watermark')),
-  
+
   // Watermark image options: set to empty array to disable watermark picker.
   // NOTE: only populate the "data" attributes with base64 data when concerned about Cross-Origin requests...
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
-  // 
+  //
   watermarkOpts: [
     {text: 'Real', value: '<%= image_path("real@2x.png") %>', data: '<%= asset_data_uri("real@2x.png") %>'},
     {text: 'Fake', value: '<%= image_path("fake@2x.png") %>', data: '<%= asset_data_uri("fake@2x.png") %>'},
