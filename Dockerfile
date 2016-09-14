@@ -1,6 +1,6 @@
 # check-meme
 
-FROM dreg.meedan.net/meedan/ruby
+FROM meedan/ruby
 MAINTAINER sysops@meedan.com
 
 #
@@ -14,8 +14,6 @@ ENV GITREPO https://github.com/meedan/check-meme
 #
 # APP CONFIG
 #
-
-RUN apt-get install -y nodejs 
 
 # nginx for check-meme
 COPY docker/nginx.conf /etc/nginx/sites-available/check-meme
