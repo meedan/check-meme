@@ -22,7 +22,7 @@ if (queries.imageStamp) {
 // Default settings
 //
 var MEME_SETTINGS = {
-  creditText: 'Checked by our team: http://example.checkmedia.org', // Default "credits" text.
+  creditText: 'Checked by our team: http://firstdraftnews.com', // Default "credits" text.
   creditSize: 20, // Font size for credit text.
   downloadName: 'Antiviral Meme', // The name of the downloaded image file (will have a ".png" extension added).
   fontColor: 'white', // Universal font color.
@@ -44,7 +44,7 @@ var MEME_SETTINGS = {
     {text: 'X-Large text', value: 50}
   ],
 
-  headlineText: 'No, this didn\'t actually happen', // Default headline text.
+  headlineText: 'CrossChecked', // Default headline text.
   height: 600, // Canvas rendering height.
   imageScale: 1, // Background image scale.
   imageSrc: queries.imageBackground , // Default background image path. MUST reside on host domain, or use base64 data.
@@ -53,7 +53,7 @@ var MEME_SETTINGS = {
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#10212f',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#10212f', '#000', '#FEC509', '#78FF62'],
+  overlayColorOpts: ['#10212f', '#E05959', '#FEC509', '#78FF62'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
 
   // Text alignment: valid settings are "left", "center", and "right".
@@ -65,14 +65,14 @@ var MEME_SETTINGS = {
     {text: 'Align right', value: 'right'}
   ],
 
-  textShadow: false, // Text shadow toggle.
+  textShadow: true, // Text shadow toggle.
   textShadowEdit: true, // Toggles text shadow control within the editor.
   watermarkAlpha: 1, // Opacity of watermark image.
   watermarkMaxWidthRatio: 0.3, // Maximum allowed width of watermark (percentage of total canvas width).
 
   // Path to the watermark image source, or blank for no watermark:
   // Alternatively, use '<%= asset_data_uri("fake.png") %>' to populate the watermark with base64 data, avoiding Cross-Origin issues.
-  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("warning@2x.png") %>',
+  watermarkSrc: (localStorage && localStorage.getItem('meme_watermark')) || '<%= image_path("Icon_Caution.png") %>',
 
   // WIP — trying to set the watermark optionally from the querystring CGB 2015 Dec 15
   //
@@ -83,10 +83,36 @@ var MEME_SETTINGS = {
   // Otherwise, just leave "data" attributes blank and allow images to load from your server.
   //
   watermarkOpts: [
-    {text: 'Real', value: '<%= image_path("real@2x.png") %>', data: '<%= asset_data_uri("real@2x.png") %>'},
-    {text: 'Fake', value: '<%= image_path("fake@2x.png") %>', data: '<%= asset_data_uri("fake@2x.png") %>'},
-    {text: 'Unknown', value: '<%= image_path("unknown@2x.png") %>', data: '<%= asset_data_uri("unknown@2x.png") %>'},
-    {text: 'Warning', value: '<%= image_path("warning@2x.png") %>', data: '<%= asset_data_uri("warning@2x.png") %>'}
+    {text: 'Caution: Manipulated', value: '<%= image_path("Icon_Caution_Manipulated.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution_Manipulated.png") %>'},
+    {text: 'Caution: Manufactured', value: '<%= image_path("Icon_Caution_Manufactured.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution_Manufactured.png") %>'},
+    {text: 'Caution: Misattributed', value: '<%= image_path("Icon_Caution_Misattributed.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution_Misattributed.png") %>'},
+    {text: 'Caution: Misleading', value: '<%= image_path("Icon_Caution_Misleading.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution_Misleading.png") %>'},
+    {text: 'Caution: Misreported', value: '<%= image_path("Icon_Caution_Misreported.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution_Misreported.png") %>'},
+    {text: 'Caution: Satire', value: '<%= image_path("Icon_Caution_Satire.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution_Satire.png") %>'},
+    {text: 'Caution', value: '<%= image_path("Icon_Caution.png") %>', 
+      data: '<%= asset_data_uri("Icon_Caution.png") %>'},
+    {text: 'False: Manipulated', value: '<%= image_path("Icon_False_Manipulated.png") %>', 
+      data: '<%= asset_data_uri("Icon_False_Manipulated.png") %>'},
+    {text: 'False: Manufactured', value: '<%= image_path("Icon_False_Manufactured.png") %>', 
+      data: '<%= asset_data_uri("Icon_False_Manufactured.png") %>'},
+    {text: 'False: Misattributed', value: '<%= image_path("Icon_False_Misattributed.png") %>', 
+      data: '<%= asset_data_uri("Icon_False_Misattributed.png") %>'},
+    {text: 'False: Misleading', value: '<%= image_path("Icon_False_Misleading.png") %>', 
+      data: '<%= asset_data_uri("Icon_False_Misleading.png") %>'},
+    {text: 'False: Misreported', value: '<%= image_path("Icon_False_Misreported.png") %>', 
+      data: '<%= asset_data_uri("Icon_False_Misreported.png") %>'},
+    {text: 'False: Satire', value: '<%= image_path("Icon_False_Satire.png") %>', 
+      data: '<%= asset_data_uri("Icon_False_Satire.png") %>'},
+    {text: 'False', value: '<%= image_path("Icon_False.png") %>', 
+      data: '<%= asset_data_uri("Icon_False.png") %>'},
+    {text: 'False: True', value: '<%= image_path("Icon_True.png") %>', 
+      data: '<%= asset_data_uri("Icon_True.png") %>'},
   ],
 
   width: 1200 // Canvas rendering width.
