@@ -16,7 +16,7 @@
   // 
   .m-canvas__download {
 
-    &--desktop {
+    .desktop {
       display: block;
 
       // Hide on mobile
@@ -25,7 +25,7 @@
       }
     }
 
-    &--mobile {
+    .mobile {
       display: block;
 
       // Hide on desktop
