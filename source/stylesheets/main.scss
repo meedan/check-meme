@@ -41,7 +41,7 @@ body {
   }
 
   // Reponsive styles: on smaller screens
-  @media all and (max-width: 650px) {
+  @media all and (max-width: 750px) {
     flex-flow: column nowrap;
 
     .image-upload-button {
@@ -132,7 +132,7 @@ footer.meta {
     font-size: smaller;
   }
 
-  @media all and (min-width: 600px) {
+  @media all and (min-width: 750px) {
     position: fixed;
     bottom: 0;
   }
