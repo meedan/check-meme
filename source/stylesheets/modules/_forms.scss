@@ -182,3 +182,23 @@ select {
 .text-shadow {
   margin-top: 8px;
 }
+
+
+.button-wrapper {
+  margin-top: 5px;
+}
+
+button {
+  background: $light-keyboard-grey;
+  color: $firefly80;
+  border: 0;
+  padding: 6px 8px;
+  margin-right: 3px;
+  border-radius: 50px;
+  appearance: none;
+  outline: 0;
+  &:hover {
+    background-color: $keyboard-grey;
+    cursor: pointer;
+  }
+}

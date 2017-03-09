@@ -100,6 +100,10 @@ footer.meta {
   }
 }
 
+.download-warning {
+  display: none;
+}
+
 // Reponsive styles: on smaller screens
 @media all and (max-width: $breakpoint) {
 
@@ -147,6 +151,16 @@ footer.meta {
     form {
       margin-top: 0;
       padding: 0;
+    }
+  }
+
+
+  .download-warning {
+    display: block;
+    text-align: center;
+
+    em {
+      font-weight: 700;
     }
   }
 }

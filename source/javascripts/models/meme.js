@@ -48,11 +48,11 @@ MEME.MemeModel = Backbone.Model.extend({
 
     // Set initial image and watermark sources:
     
-    // if (queries.image) {
-	   // this.background.src = queries.image; // from settings.js.erb
-    // } else if (this.get('imageSrc')) {
-	   // this.background.src = this.get('imageSrc');
-    // }
+    if (queries.image) {
+	   this.background.src = queries.image; // from settings.js.erb
+    } else if (this.get('imageSrc')) {
+	   this.background.src = this.get('imageSrc');
+    }
     
     if (this.get('watermarkSrc')) this.setWatermarkSrc(this.get('watermarkSrc'));
 

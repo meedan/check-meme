@@ -14,17 +14,39 @@
 
   // The download button
   // 
-  .m-canvas__download a {
-    background: $theme-color;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    font-weight: 700;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color ease-in-out 0.3s;
+  .m-canvas__download {
+
+    &--desktop {
+      display: block;
+
+      // Hide on mobile
+      @media all and (max-width: $breakpoint) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: block;
+
+      // Hide on desktop
+      @media all and (min-width: $breakpoint) {
+        display: none;
+      }
+    }
+
+    a {
+      background: $theme-color;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      display: block;
+      font-weight: 700;
+      line-height: 50px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color ease-in-out 0.3s;
+    }
+
     .icon {
       font-size: 20px;
       margin: 0 10px;

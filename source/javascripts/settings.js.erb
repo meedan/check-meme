@@ -22,7 +22,7 @@ $.each(document.location.search.substr(1).split('&'),function(c,q){
 // Default settings
 //
 var MEME_SETTINGS = {
-  creditText: 'Checked by our team: http://firstdraftnews.com', // Default "credits" text.
+  creditText: 'http://firstdraftnews.com', // Default "credits" text.
   creditSize: 20, // Font size for credit text.
   downloadName: 'Antiviral Meme', // The name of the downloaded image file (will have a ".png" extension added).
   fontColor: 'white', // Universal font color.
@@ -41,8 +41,8 @@ var MEME_SETTINGS = {
     {text: 'Small text', value: 14},
     {text: 'Medium text', value: 24},
     {text: 'Large text', value: 36},
-    {text: 'X-Large text', value: 50}
-    {text: '2X-Large text', value: 75}
+    {text: 'X-Large text', value: 50},
+    {text: '2X-Large text', value: 75},
     {text: '3X-Large text', value: 100}
   ],
 
@@ -50,7 +50,7 @@ var MEME_SETTINGS = {
   height: 600, // Canvas rendering height.
   imageScale: 1, // Background image scale.
   imageSrc: queries.imageBackground , // Default background image path. MUST reside on host domain, or use base64 data.
-  overlayAlpha: 0.5, // Opacity of image overlay.
+  overlayAlpha: 0.7, // Opacity of image overlay.
 
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#10212f',
@@ -113,9 +113,9 @@ var MEME_SETTINGS = {
       data: '<%= asset_data_uri("Icon_False_Satire.png") %>'},
     {text: 'False', value: '<%= image_path("Icon_False.png") %>', 
       data: '<%= asset_data_uri("Icon_False.png") %>'},
-    {text: 'False: True', value: '<%= image_path("Icon_True.png") %>', 
+    {text: 'True', value: '<%= image_path("Icon_True.png") %>', 
       data: '<%= asset_data_uri("Icon_True.png") %>'},
   ],
 
-  width: 1200 // Canvas rendering width.
+  width: 900 // Canvas rendering width.
 };

@@ -1,20 +1,14 @@
 <form class="m-editor" id="meme-editor-view">
   <div class="form-group">
     <div class="dropzone" id="dropzone">Drop Image Here</div>
+
     <label class="image-upload-button" for="image-upload">Upload file</label>
-    <input name="image-upload" type="file" accept="image/*" id="image-upload"></input>
-    
-    <h2><label for="image-scale">Resize image</label></h2>
+    <input name="image-upload" type="file" accept="image/*" id="image-upload">
+  </div>
+  <div class="form-group">
+    <h2><label for="image-scale">Zoom background image</label></h2>
     <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
   </div>
-  
-  <div class="form-group">
-    <h2><label for="headline">Headline</label></h2>
-    <input id="headline" name="headline" type="text" value=""></input>
-    <h2><label for="credit">Credit &amp; Link</label></h2>
-    <input id="credit" name="credit" type="text" value="">
-  </div>
-  
   <div class="form-group">
     <h2><label for="font-size">Status Sticker</label></h2>
     <div class="select-wrapper">
@@ -24,11 +18,35 @@
     </div>
   </div>
 
+  <div class="form-group">
+    <h2><label for="headline">Headline</label></h2>
+    <input id="headline" name="headline" type="text" value=""></input>
+    <h2><label for="credit">Credit &amp; Link</label></h2>
+    <input id="credit" name="credit" type="text" value="">
+  </div>
+
+  
+
   <div class="form-group more-options-button">
     <h2><a href="#">More Options</a></h2>
   </div>
+
+
   
   <div class="form-group more-options js-toggle">
+
+    <h2>
+      <label>Share size</label>
+    </h2>
+    <div class="button-wrapper">
+      <button id="size1">Twitter</button>
+      <button id="size2">Facebook</button>
+      <!-- <button id="size3">Facebook Ad </button> -->
+      <!-- <button id="size4">Facebook Cover </button> -->
+      <button id="size5">Instagram</button>
+    </div>
+
+
     <h2><label for="text-align">Text Alignment</label></h2>
     <div class="select-wrapper">
       <select class="text-align" id="text-align">
