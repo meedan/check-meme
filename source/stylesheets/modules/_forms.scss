@@ -95,3 +95,86 @@ form {
   text-decoration: none;
   padding-bottom: 1em;
 }
+
+
+// Range input
+//
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 100%;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: $keyboard-grey;
+  border-radius: 1.3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: 1px solid $keyboard-grey;
+  height: 36px;
+  width: 20px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: $keyboard-grey;
+}
+
+
+// Dropdowns
+select {
+  appearance: none;
+  background: $keyboard-grey;
+  border: 0 !important;
+  border-radius: 50px;
+  color: white;
+  font-size: 16px;
+  height: 3em;
+  margin: 4px 0;
+  padding: 0 20px !important;
+  border-radius: 50px !important;
+  
+  &:hover {
+    background: $light-keyboard-grey;
+    &::after {
+      color: $firefly40!important;
+    }
+  }
+
+  &:active {
+    color: $firefly80;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+
+  &::after {
+    color: $firefly80;
+    content: '▼';
+    display: block;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold;
+    height: 10px;
+    pointer-events: none;
+    position: absolute;
+    right: 16px;
+    top: 1.6em;
+    width: 10px;
+  }
+}
