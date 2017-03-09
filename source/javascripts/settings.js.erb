@@ -15,9 +15,9 @@ $.each(document.location.search.substr(1).split('&'),function(c,q){
 //
 //   http://memebuster.dev/?imageStamp=fake
 //
-if (queries.imageStamp) {
-  var imageStampPath = "images/" + queries.imageStamp + ".png";
-}
+// if (queries.imageStamp) {
+//   var imageStampPath = "images/" + queries.imageStamp + ".png";
+// }
 
 // Default settings
 //
@@ -42,6 +42,8 @@ var MEME_SETTINGS = {
     {text: 'Medium text', value: 24},
     {text: 'Large text', value: 36},
     {text: 'X-Large text', value: 50}
+    {text: '2X-Large text', value: 75}
+    {text: '3X-Large text', value: 100}
   ],
 
   headlineText: 'CrossChecked', // Default headline text.
@@ -53,7 +55,7 @@ var MEME_SETTINGS = {
   // Image overlay color, or blank ('') for no overlay:
   overlayColor: '#10212f',
   // Overlay color options: set to empty array to disable overlay options selector.
-  overlayColorOpts: ['#10212f', '#E05959', '#FEC509', '#78FF62'],
+  overlayColorOpts: ['#10212f', '#730537', '#BC6411', '#187520'],
   paddingRatio: 0.05, // Percentage of canvas width to use as edge padding.
 
   // Text alignment: valid settings are "left", "center", and "right".
