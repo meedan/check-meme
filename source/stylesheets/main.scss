@@ -34,8 +34,44 @@ body {
   margin: 0 auto;
   display: flex;
   padding: 0 1em;
+
+  .image-upload-button {
+      display: none;
+    }
+
+  // Reponsive styles: on smaller screens
   @media all and (max-width: 650px) {
     flex-flow: column nowrap;
+
+
+    .image-upload-button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: $theme-color;
+      color: white;
+      padding: 10px 4px;
+      font-size: 13px;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        color: rgba(#ffffff, .5);
+      }
+
+      &:active {
+        background-color: $dodgerBlue60;
+      }
+
+      & + input {
+        display: none;
+      }
+    }
+
+    .dropzone {
+      display: none;
+    }
+
     .m-editor,
     .m-canvas {
       width: 100%;

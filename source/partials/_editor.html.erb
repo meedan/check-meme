@@ -1,6 +1,9 @@
 <form class="m-editor" id="meme-editor-view">
   <div class="form-group">
     <div class="dropzone" id="dropzone">Drop Image Here</div>
+    <label class="image-upload-button" for="image-upload">Upload file</label>
+    <input name="image-upload" type="file" accept="image/*" id="image-upload"></input>
+    
     <h2><label for="image-scale">Resize image</label></h2>
     <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
   </div>
@@ -43,6 +46,7 @@
       <input id="text-shadow" name="shadow" type="checkbox">
       <label for="text-shadow">Add Text Shadow</label>
     </div>
+
     <div class="m-editor__overlay" id="overlay">
       <h2>Overlay Color</h2>
       <ul class="checkbox-group">
