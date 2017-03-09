@@ -102,6 +102,12 @@ footer.meta {
 
 // Reponsive styles: on smaller screens
 @media all and (max-width: $breakpoint) {
+
+  h1 {
+    text-align: center;
+    font-size: 14px;
+  }
+
   .m-meme {
     flex-flow: column nowrap;
 
