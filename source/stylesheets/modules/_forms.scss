@@ -138,18 +138,18 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 // Dropdowns
 select {
   appearance: none;
-  background: $keyboard-grey;
+  background: $light-keyboard-grey;
   border: 0 !important;
-  border-radius: 50px;
   color: white;
   font-size: 16px;
   height: 3em;
   margin: 4px 0;
-  padding: 0 20px !important;
-  border-radius: 50px !important;
+  padding: 0 10px !important;
+  border-radius: 2px !important;
+  color: $firefly80;
   
   &:hover {
-    background: $light-keyboard-grey;
+    background: $keyboard-grey;
     &::after {
       color: $firefly40!important;
     }
@@ -177,4 +177,8 @@ select {
     top: 1.6em;
     width: 10px;
   }
+}
+
+.text-shadow {
+  margin-top: 8px;
 }
