@@ -12,10 +12,11 @@ form {
   }
 
   h2 {
-    margin-bottom: 0em;
+    margin-bottom: 0;
     font-size: $form--font-size;
     color: $firefly80;
     padding: $pad 0 0;
+
     &:first-of-type {
       border-top-width: 0;
     }
@@ -28,6 +29,18 @@ form {
     padding: $pad $pad*2 $pad * 2;
     border: 1px solid $firefly10;
     border-bottom-width: 0;
+
+    // At smaller sizes
+    @media all and (max-width: $breakpoint) {
+      padding: 0 5px;
+      border: 0;
+      background-color: transparent;
+
+      label {
+        font-size: 10px;
+      }
+    }
+
 
     &:first-of-type {
       border-top-left-radius: $radius;
@@ -43,6 +56,10 @@ form {
 
     &.more-options-button {
       border: 1px solid $firefly10;
+      // At smaller sizes
+      @media all and (max-width: $breakpoint) {
+        border: 0;
+      }
     }
   }
 
@@ -64,6 +81,9 @@ form {
     border: 1px solid $firefly10;
     line-height: 2.8;
     outline: 0;
+    @media all and (max-width: $breakpoint) {
+      line-height: 1.8;
+    }
 
     &:focus {
       border: 1px solid $dodgerBlue;
@@ -160,6 +180,7 @@ select {
   }
 }
 
+// Dropdowns
 .select-wrapper {
   position: relative;
 
@@ -174,7 +195,7 @@ select {
     pointer-events: none;
     position: absolute;
     right: 16px;
-    top: 1.6em;
+    top: 1.7em;
     width: 10px;
   }
 }
@@ -182,7 +203,6 @@ select {
 .text-shadow {
   margin-top: 8px;
 }
-
 
 .button-wrapper {
   margin-top: 5px;
@@ -197,6 +217,7 @@ button {
   border-radius: 50px;
   appearance: none;
   outline: 0;
+
   &:hover {
     background-color: $keyboard-grey;
     cursor: pointer;

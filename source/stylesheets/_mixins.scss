@@ -1,0 +1,19 @@
+
+@mixin button {
+  border-radius: 4px;
+  background-color: $theme-color;
+  color: white;
+  padding: 10px 4px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    color: rgba(#ffffff, .5);
+  }
+
+  &:active {
+    background-color: $dodgerBlue60;
+  }
+}

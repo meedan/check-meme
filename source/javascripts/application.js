@@ -14,6 +14,7 @@
 $(document).ready(function() {
   $('.more-options.js-toggle').hide();
   $('.more-options-button a').click(function(e) {
+  	$('.more-options-button').toggle();
     $('.more-options.js-toggle').toggle();
     $('.more-options.js-toggle').addClass('.js-last');
     e.preventDefault();

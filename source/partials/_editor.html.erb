@@ -5,35 +5,77 @@
     <label class="image-upload-button" for="image-upload">Upload file</label>
     <input name="image-upload" type="file" accept="image/*" id="image-upload">
   </div>
-  <div class="form-group">
-    <h2><label for="image-scale">Zoom background image</label></h2>
-    <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
-  </div>
-  <div class="form-group">
-    <h2><label for="font-size">Status Sticker</label></h2>
-    <div class="select-wrapper">
-      <select class="watermark" id="watermark">
-        <option value="" disabled>Select a sticker</option>
-      </select>
+
+  <div class="two-col-on-mobile">
+    <div class="form-group">
+      <h2><label for="image-scale">Zoom</label></h2>
+      <input id="image-scale" type="range" max="4" min=".01" step=".01" value="1">
+    </div>
+    <div class="form-group">
+      <h2><label for="font-size">Status Sticker</label></h2>
+      <div class="select-wrapper">
+        <select class="watermark" id="watermark">
+          <option value="" disabled>Select a sticker</option>
+        </select>
+      </div>
     </div>
   </div>
 
-  <div class="form-group">
-    <h2><label for="headline">Headline</label></h2>
-    <input id="headline" name="headline" type="text" value=""></input>
-    <h2><label for="credit">Credit &amp; Link</label></h2>
-    <input id="credit" name="credit" type="text" value="">
+  <div class="form-group two-col-on-mobile">
+    <div>
+      <h2><label for="headline">Headline</label></h2>
+      <input id="headline" name="headline" type="text" value=""></input>
+    </div>
+    <div>
+      <h2><label for="credit">Subhead</label></h2>
+      <input id="credit" name="credit" type="text" value="">
+    </div>
   </div>
-
-  
 
   <div class="form-group more-options-button">
     <h2><a href="#">More Options</a></h2>
   </div>
-
-
   
   <div class="form-group more-options js-toggle">
+
+    <div class="two-col-on-mobile">
+      <div>
+        <h2><label for="text-align">Text Alignment</label></h2>
+        <div class="select-wrapper">
+          <select class="text-align" id="text-align">
+            <option value="" disabled>Select alignment</option>
+          </select>
+        </div>
+      </div>
+      
+      <div>
+        <h2><label for="font-size">Font Size</label></h2>
+        <div class="select-wrapper">
+          <select class="font-size" id="font-size">
+            <option value="" disabled>Select a font size</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <div class="two-col-on-mobile">
+      <div>
+        <h2><label for="font-family">Font Family</label></h2>
+        <div class="select-wrapper">
+          <select class="font-family" id="font-family">
+            <option value="" disabled>Select a font</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="m-editor__overlay" id="overlay">
+        <h2><label>Overlay Color</label></h2>
+        <ul class="checkbox-group">
+          <li><label><input class="m-editor__swatch none" type="radio" name="overlay" value=""> </label></li>
+        </ul>
+      </div>
+    </div>
+
 
     <h2>
       <label>Share size</label>
@@ -46,38 +88,9 @@
       <button id="size5">Instagram</button>
     </div>
 
-
-    <h2><label for="text-align">Text Alignment</label></h2>
-    <div class="select-wrapper">
-      <select class="text-align" id="text-align">
-        <option value="" disabled>Select alignment</option>
-      </select>
-    </div>
-    
-    <h2><label for="font-size">Font Size</label></h2>
-    <div class="select-wrapper">
-      <select class="font-size" id="font-size">
-        <option value="" disabled>Select a font size</option>
-      </select>
-    </div>
-    
-    <h2><label for="font-family">Font Family</label></h2>
-    <div class="select-wrapper">
-      <select class="font-family" id="font-family">
-        <option value="" disabled>Select a font</option>
-      </select>
-    </div>
-    
     <div class="checkbox-group text-shadow">
       <input id="text-shadow" name="shadow" type="checkbox">
       <label for="text-shadow">Add Text Shadow</label>
-    </div>
-
-    <div class="m-editor__overlay" id="overlay">
-      <h2>Overlay Color</h2>
-      <ul class="checkbox-group">
-        <li><label><input type="radio" name="overlay" value=""> None</label></li>
-      </ul>
     </div>
   </div>
 </form>
